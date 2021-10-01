@@ -6,92 +6,103 @@
 
 <style type="text/css">
 	
+body{
+	background-color: lightblue;
+}
+
 #marcus{
-	width:200px;
-	height:150px;
-	background-image: url(chickadee.png);
+	width:237px;
+	height:195px;
+	top: 3%;
+	right:41%;
+	background-image: url(trytofly.png);
 	background-size: cover;
 	background-position: center;
 }
 
 #marcus:hover{
-	width: 200px;
-	height: 150px;
-	background-image: url(loopbird.gif);
+	width: 237px;
+	height: 195px;
+	right:41%;
+	background-image: url(looptryfly.gif);
+	background-position: center;
 	background-size: cover;
-	}
+}
 
 #flying{
 	width: 250px;
-	height: 200px;
+	height: 160px;
 	background-image: url(flying.png);
-	background-size: cover;
-	position: relative;
-	right: 38%;
+	right: 67%;
+	top:35%;
 	transition: 1s;
+	background-size: cover;
+	background-position: center;
 }
 #flying:hover{
 	width: 250px;
-	height: 200px;
+	height: 160px;
 	background-image: url(flying.gif);
-	background-size: cover;
-	position: relative;
-	right: 45%;
+	right: 73%;
+	top:35%;
 	transition: 1s;
-
-}
-#lflying{
-	width:175px;
-	height:175px;
-	background-image: url(trytofly.png);
-	position: relative;
 	background-size: cover;
-	left: 55%;
-	animation: ease-out;left: 
+	background-position: center;
 }
-#lflying:hover{
+#tryfly{
 	width:175px;
-	height:175px;
-	background-image: url(looptryfly.gif);
-	position: relative;
+	height:155px;
+	background-image: url(chickadee.png);
 	background-size: cover;
-	left: 55%;
+	background-position: center;
+	left: 74%;
+	top: 32%;
+ 
+}
+#tryfly:hover{
+	width:175px;
+	height:155px;
+	background-image: url(loopbird.gif);	
+	background-size: cover;
+	background-position: center;
+	left: 74%;
 }
 #tree{
-	width:900px;
-	height:600px;
+	z-index: -1;
+	width:1000px;
+	height:690px;
 	background-image: url(tree2.png);
-	background-position: center 45px;
+	background-position: center 52px;
 	background-size: cover;
 	background-repeat: no-repeat;
-
+	position:relative;
 }
 #menubar{
-	width:100px;
-	height:50px;
+	width: 100px;
+	height: 45px;
 	background-color: lightskyblue;
 	position: absolute;
-	top:5%;
-	font-size: 40px;
+	top: 5px;
+	font-size: 35px;
+	color: white;
 	text-align: center;
-	color: white;
-
 }
-body{
-	background-color: lightblue;
 
-}
 .menu{
+	z-index: 1;
 	color: white;
+	text-align:center;
+		position: absolute;
 }
+
 </style>
 
 </head>
 <body>
 
-<center>
-	
-<div id="tree" class="menu"> 
+<center><div id="tree"></div></center>
+
+<div id="box">
 
 <a href="aboutme.html"> 
 <div id="marcus" class="menu"> About Me</div>
@@ -103,15 +114,17 @@ body{
 
 
 <a href="projects.html">
-<div id="lflying" class="menu"> Projects</div></a>
-</center>
+<div id="tryfly" class="menu"> Projects</div></a>
+</div>
 
-</div>
+
+<a href="index.html">
 <div id="menubar"> Home
+	
 </div>
+</a>
 
 
 </body>
 </html>
 
-<!--How make birds fit better -- why on different lines?
