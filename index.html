@@ -19,44 +19,99 @@
 	height: 150px;
 	background-image: url(loopbird.gif);
 	background-size: cover;
+	}
+
+#flying{
+	width: 250px;
+	height: 200px;
+	background-image: url(flying.png);
+	background-size: cover;
+	position: relative;
+	right: 38%;
+	transition: 1s;
+}
+#flying:hover{
+	width: 250px;
+	height: 200px;
+	background-image: url(flying.gif);
+	background-size: cover;
+	position: relative;
+	right: 45%;
+	transition: 1s;
 
 }
-
+#lflying{
+	width:175px;
+	height:175px;
+	background-image: url(trytofly.png);
+	position: relative;
+	background-size: cover;
+	left: 55%;
+	animation: ease-out;left: 
+}
+#lflying:hover{
+	width:175px;
+	height:175px;
+	background-image: url(looptryfly.gif);
+	position: relative;
+	background-size: cover;
+	left: 55%;
+}
 #tree{
-	width: 900px;
+	width:900px;
 	height:600px;
-	background-image: url(tree1.png);
-	background-position: center 20px;
+	background-image: url(tree2.png);
+	background-position: center 45px;
 	background-size: cover;
 	background-repeat: no-repeat;
 
 }
+#menubar{
+	width:100px;
+	height:50px;
+	background-color: lightskyblue;
+	position: absolute;
+	top:5%;
+	font-size: 40px;
+	text-align: center;
+	color: white;
 
+}
+body{
+	background-color: lightblue;
+
+}
+.menu{
+	color: white;
+}
 </style>
 
 </head>
 <body>
 
-
-
 <center>
 	
-<div id="tree">
+<div id="tree" class="menu"> 
 
-<a href="https://www.audubon.org/">
+<a href="aboutme.html"> 
+<div id="marcus" class="menu"> About Me</div>
+</a>
 
-
-<div id="marcus">
-</div>
-
-
+<a href="journal.html">
+<div id="flying" class="menu"> Journal</div>
 </a>
 
 
-</div>
-
+<a href="projects.html">
+<div id="lflying" class="menu"> Projects</div></a>
 </center>
+
+</div>
+<div id="menubar"> Home
+</div>
 
 
 </body>
 </html>
+
+<!--How make birds fit better -- why on different lines?
