@@ -3,6 +3,18 @@
 <head>
 	<title></title>
 	<style type="text/css">
+#menubar{
+	z-index: 2;
+	width: 100px;
+	height: 37px;
+	background-color: white;
+	position: absolute;
+	top: 92.5%;
+	left: .85%;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+}
 #map{
 	z-index: -1;
 	width: 1425px;
@@ -69,11 +81,11 @@
 
 #indonesia{
 	z-index: 1;
-	width: 400px;
+	width: 500px;
 	height:250px;
 	position:absolute;
 	top: 59%;
-	left:70%;
+	left:62%;
 }
 #russia{
 	z-index: 1;
@@ -88,6 +100,9 @@
 	</style>
 </head>
 <body>
+<a href="projects.html">
+<div id="menubar"> Projects</div>
+</a>
 <center>
 <div id="map"></div></center>
 

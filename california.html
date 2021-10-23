@@ -3,12 +3,18 @@
 <head>
 	<title></title>
 	<style type="text/css">
-#map{
-	z-index: -1;
+body{
 	width: 1425px;
 	height: 692px;
+}
+#map{
+	z-index: -1;
+	width: 99.99%;
+	height: 99.99%;
+	position: relative;
 	background-image: url(california.png);
 	background-size: cover;
+	background-position: cover;
 		}
 #zoom{
 	z-index: 1;
@@ -20,13 +26,13 @@
 	top: 90%;
 	left: 85%;
 		}
-#nyc{
+#lapin{
 	z-index: 1;
-	width: 100px;
-	height:100px;
+	width: 2%;
+	height:7%;
 	position:absolute;
-	bottom: 7%;
-	right:35%;
+	top: 74%;
+	left:46.5%;
 }
 
 	</style>
@@ -34,6 +40,6 @@
 <body>
 <div id="map"></div>
 <a href="usamap.html"><div id="zoom"></div></a>
-<a href="nyc.html"><div id="nyc"></div></a>
+<a href="lalist.html"><div id="lapin"></div></a>
 </body>
 </html>
