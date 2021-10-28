@@ -6,16 +6,15 @@
 
 <style type="text/css">
 #menubar{
-	width: 100px;
-	height: 45px;
+	width: 7vw;
+	height: 6vh;
 	background-color: lightskyblue;
 	position: absolute;
 	top: 5px;
-	font-size: 35px;
+	font-size: 2.5vw;
 	color: white;
 	text-align: center;
 }
-
 #projects{
 	width: 100px;
 	height: 45px;
@@ -38,8 +37,20 @@ body{
 	position: absolute;
 	top: 15%;
 	text-align: center;
+	left: 30%;
 }
-#text{
+
+
+#circle{
+	width: 400px;
+	height: 200px;
+	background-image: url(circles.png);
+	background-size: cover;
+	position: absolute;
+	top: 15%;
+	text-align: center;
+}
+.text{
 	position: relative;
 	top: 105%;
 	color: black;
@@ -54,7 +65,10 @@ body{
 </a>
 <div id="projects"> Projects</div>
 <a href="birdmap.html"><div id="birdmap">
-	<div id="text"> Bird Map</div>
+	<div class="text" id="birdtext"> Bird Map</div></div></a>
+
+<a href="javascript1.html"> <div id="circle">
+	<div class="text" id="circletext"> Circles</div>
 </div></a>
 
 </body>
