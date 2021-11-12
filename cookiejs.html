@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div> Instructions:
+		<p>
+			Double click to create an egg
+		</p>
+		<p>
+			Hover on egg to get a chick
+		</p>
+		<p> 
+			Click on the chick to have it hatch!
+		</p>
+	</div>
+<script type="text/javascript">
+	function makeCookie (){
+		var cookie = document.createElement("div")
+		document.body.appendChild(cookie);
+		cookie.style.height = "150px";
+		cookie.style.width = "150px";
+		cookie.style.backgroundSize = "cover";
+		cookie.style.backgroundRepeat = "no-repeat";
+		cookie.style.display = "inline-block"
+		cookie.style.backgroundImage = "url(cookie.png)"
+		
+		cookie.addEventListener("mouseover", function(){
+			cookie.style.backgroundImage = "url(dinosaur.png)"
+		})
+
+		cookie.addEventListener("mouseout", function(){
+
+			cookie.style.backgroundImage = "url(cookie.png)"
+		})
+
+		cookie.addEventListener("click", function(){
+			cookie.style.backgroundImage = "url(dinosaur1.png)"
+		})
+	}
+document.addEventListener("dblclick", makeCookie)
+
+</script>
+</body>
+</html>
