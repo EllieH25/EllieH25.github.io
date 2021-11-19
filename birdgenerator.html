@@ -1,0 +1,62 @@
+<!-- 
+1. make a div
+2. variable that points to a number (math.random, rounded that multiplies by something -- 0-51 or etc however labeled)
+3. function that on click, generates a random number plus phrase png be background image
+4. or have an array/list, and each element has a number corresponding to it. have (for ex.) chickadee.png, and is this element in the array, will put chickadee.png
+
+make div, console logs a random number that is an integer between 0-50 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#photo{
+			width: 98.75vw;
+			height: 97vh;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+
+		}
+
+#menubar{
+	z-index: 2;
+	width: 100px;
+	height: 37px;
+	background-color: white;
+	position: absolute;
+	top: 2%;
+	left: .85%;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	background-color: lightskyblue;
+}
+
+
+	</style>
+
+</head>
+<body>
+	<div id="photo"></div>
+<a href="projects.html">
+<div id="menubar"> Projects</div>
+</a>
+
+<script type="text/javascript">
+
+let photo = document.getElementById('photo');
+
+function bird() {
+var number = Math.floor(Math.random()*51);
+
+
+photo.style.backgroundImage = "url(./birds/" + number + ".jpg)"
+}
+
+document.addEventListener("click", bird)
+
+</script>
+</body>
+</html>
