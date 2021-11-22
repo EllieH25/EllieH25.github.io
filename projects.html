@@ -6,12 +6,14 @@
 
 <style type="text/css">
 #menubar{
-	width: 7vw;
-	height: 6vh;
+	z-index: 2;
+	width: 6vw;
+	height: 2.5vw;
 	background-color: lightskyblue;
 	position: absolute;
-	top: 5px;
-	font-size: 2.5vw;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
 	color: white;
 	text-align: center;
 }
@@ -32,7 +34,7 @@ body{
 #birdmap{
 	width: 28vw;
 	height: 28vh;
-	background-image: url(worldmap.png);
+	background-image: url(map.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -79,8 +81,14 @@ body{
 	top: 105%;
 	color: black;
 	text-align: center;
-	font-size: 1.1vw
+	font-size: 1.1vw;
 }
+.title{
+	border-style: solid;
+	border-width: .1vw;
+	border-color: black;
+}
+
 </style>
 
 </head>
@@ -90,17 +98,15 @@ body{
 <div id="menubar"> Home</div>
 </a>
 <div id="projects"> Projects</div>
-<a href="birdmap.html"><div id="birdmap">
+<a href="birdmap.html"><div class="title" id="birdmap">
 	<div class="text"> Bird Map</div></div></a>
-
-<a href="javascript1.html"> <div id="circle">
+<a href="javascript1.html"> <div class="title" id="circle">
 	<div class="text"> Circles</div>
 </div></a>
-<a href="cookiejs.html"> <div id="egg">
+<a href="cookiejs.html"> <div class="title" id="egg">
 	<div class="text"> Egg to bird</div>
 </div></a>
-
-<a href="birdgenerator.html"> <div id="birdgenerator">
+<a href="birdgenerator.html"> <div class="title" id="birdgenerator">
 	<div class="text"> Random Bird Generator</div>
 </div></a>
 

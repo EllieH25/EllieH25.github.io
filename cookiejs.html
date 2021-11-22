@@ -2,19 +2,42 @@
 <html>
 <head>
 	<title></title>
+	<style type="text/css">
+body{
+	background-color: #cce7ff;
+}
+
+#text{
+	z-index: 1;
+	width:20vw;
+	height:17vh;
+	top: 3vw;
+	left: .5%;
+	position:relative;
+	/*background-color: blue;*/
+
+}
+#menubar{
+	z-index: 2;
+	width: 7vw;
+	height: 2.5vw;
+	background-color: lightskyblue;
+	position: absolute;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+
+	</style>
 </head>
 <body>
-	<div> Instructions:
-		<p>
-			Double click to create an egg
-		</p>
-		<p>
-			Hover on egg to get a chick
-		</p>
-		<p> 
-			Click on the chick to have it hatch!
-		</p>
+	<div id="text"> Instructions: Double click to create an egg. Hover on egg to get a chick. Click on the chick to have it hatch!
 	</div>
+<a href="projects.html">
+<div id="menubar"> Projects</div>
+</a>
 <script type="text/javascript">
 	function makeCookie (){
 		var cookie = document.createElement("div")
