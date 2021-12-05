@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+body{
+	background-color: #cce7ff;
+}
+
+#menubar{
+	z-index: 2;
+	width: 7vw;
+	height: 2.5vw;
+	background-color: lightskyblue;
+	position: absolute;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+
+#info{
+	z-index: 3;
+	width: 99.5vw;
+	height: 1vw;
+	background-color: #cce7ff;
+	color: black;
+	font-size: 1vw;
+	position: absolute;
+	top: 9vw;
+}
+
+#wemake{
+	width: 99.5vw;
+	height: 8vw;
+	color: black;
+	font-size: 3vw;
+	position: absolute;
+	top: 5vw;
+	font-weight: bold;
+}
+
+#text{
+	width: 99.5vw;
+	height: 10vw;
+	color: black;
+	font-size: 2.5vw;
+	position: absolute;
+	top: 14vw;
+}
+#photo{
+	width: 20vw;
+	height:20vw;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 17vw;
+	left: 40vw;
+}
+#link{
+	z-index: 1
+	width: 20vw;
+	height:20vw;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 23vw;
+	left: 40vw;
+}
+
+#scroll{
+	width: 20vw;
+	height: 6vw;
+	background-image: url(down.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 41vw;
+	left: 40vw;
+}
+
+#scrolltext{
+	position: relative;
+	top: -10%;
+	color: black;
+	text-align: center;
+	font-size: 1vw;
+}
+#endbar{
+	width: 1vw;
+	height: 3vw;
+	position: absolute;
+	top: 115vw;
+}
+
+.bird{
+	width: 10vw;
+	height: 10vw;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	color: black;
+	font-size: 1.1vw;
+}
+#entry1{
+	background-image: url(./recipes/0.png);
+	top: 50vw;
+	left: 3vw;
+}
+#entry2{
+	background-image: url(./recipes/1.png);
+	top: 50vw;
+	left: 17vw;
+}
+#entry3{
+	background-image: url(./recipes/2.png);
+	top: 50vw;
+	left: 31vw;
+}
+#entry4{
+	background-image: url(./recipes/3.png);
+	top: 50vw;
+	left: 45vw;
+}
+#entry5{
+	background-image: url(./recipes/4.png);
+	top: 50vw;
+	left: 59vw;
+}
+#entry6{
+	background-image: url(./recipes/5.png);
+	top: 50vw;
+	left: 73vw;
+}
+#entry7{
+	background-image: url(./recipes/6.png);
+	top: 50vw;
+	left: 87vw;
+}
+#entry8{
+	background-image: url(./recipes/6.png);
+	top: 61vw;
+	left: 3vw;
+}
+#entry9{
+	background-image: url(./recipes/7.png);
+	top: 61vw;
+	left: 17vw;
+}
+#entry10{
+	background-image: url(./recipes/9.png);
+	top: 61vw;
+	left: 31vw;
+}
+#entry11{
+	background-image: url(./recipes/10.png);
+	top: 61vw;
+	left: 45vw;
+}
+#entry12{
+	background-image: url(./recipes/11.png);
+	top: 61vw;
+	left: 59vw;
+}
+#entry13{
+	background-image: url(./recipes/12.png);
+	top: 61vw;
+	left: 73vw;
+}
+#entry14{
+	background-image: url(./recipes/13.png);
+	top: 61vw;
+	left: 87vw;
+}
+#entry15{
+	background-image: url(./recipes/14.png);
+	top: 72vw;
+	left: 3vw;
+}
+#entry16{
+	background-image: url(./recipes/15.png);
+	top: 72vw;
+	left: 17vw;
+}
+#entry17{
+	background-image: url(./recipes/16.png);
+	top: 72vw;
+	left: 31vw;
+}
+#entry18{
+	background-image: url(./recipes/17.png);
+	top: 72vw;
+	left: 45vw;
+}
+#entry19{
+	background-image: url(./recipes/18.png);
+	top: 72vw;
+	left: 59vw;
+}
+#entry20{
+	background-image: url(./recipes/19.png);
+	top: 72vw;
+	left: 73vw;
+}
+#entry21{
+	background-image: url(./recipes/20.png);
+	top: 72vw;
+	left: 87vw;
+}
+#entry22{
+	background-image: url(./recipes/21.png);
+	top: 83vw;
+	left: 3vw;
+}
+#entry23{
+	background-image: url(./recipes/22.png);
+	top: 83vw;
+	left: 17vw;
+}
+#entry24{
+	background-image: url(./recipes/23.png);
+	top: 83vw;
+	left: 31vw;
+}
+#entry25{
+	background-image: url(./recipes/24.png);
+	top: 83vw;
+	left: 45vw;
+}
+#entry26{
+	background-image: url(./recipes/25.png);
+	top: 83vw;
+	left: 59vw;
+}
+#entry27{
+	background-image: url(./recipes/26.png);
+	top: 83vw;
+	left: 73vw;
+}
+#entry28{
+	background-image: url(./recipes/27.png);
+	top: 83vw;
+	left: 87vw;
+}
+#entry29{
+	background-image: url(./recipes/28.png);
+	top: 94vw;
+	left: 3vw;
+}
+#entry30{
+	background-image: url(./recipes/29.png);
+	top: 94vw;
+	left: 17vw;
+}
+#entry31{
+	background-image: url(./recipes/30.png);
+	top: 94vw;
+	left: 31vw;
+}
+#entry32{
+	background-image: url(./recipes/31.png);
+	top: 94vw;
+	left: 45vw;
+}
+#entry33{
+	background-image: url(./recipes/32.png);
+	top: 94vw;
+	left: 59vw;
+}
+#entry34{
+	background-image: url(./recipes/33.png);
+	top: 94vw;
+	left: 73vw;
+}
+#entry35{
+	background-image: url(./recipes/34.png);
+	top: 94vw;
+	left: 87vw;
+}
+#entry36{
+	background-image: url(./recipes/35.png);
+	top: 105vw;
+	left: 3vw;
+}
+#entry37{
+	background-image: url(./recipes/36.png);
+	top: 105vw;
+	left: 17vw;
+}
+#entry38{
+	background-image: url(./recipes/37.png);
+	top: 105vw;
+	left: 31vw;
+}
+#entry39{
+	background-image: url(./recipes/38.png);
+	top: 105vw;
+	left: 45vw;
+}
+#entry40{
+	background-image: url(./recipes/39.png);
+	top: 105vw;
+	left: 59vw;
+}
+
+
+</style>
+
+	</style>
+
+</head>
+<body>
+
+<div id="photo"></div>
+
+<div id="scroll"><div id="scrolltext">Scroll down to see all the recipes</div></div>
+
+<div id="endbar"></div>
+
+<center>
+
+<div id="wemake">We Should Make...</div>
+<div id="info">(Click to choose a recipe!)</div>
+<div id="text"> </div>
+
+</center>
+<a href="https://docs.google.com/document/d/1_9hmhVopCqs8am_5ZPN1O7c77FwRsW5Y1g-2Fk55q6k/edit"><div class="bird" id="entry1"></div></a>
+<a href="https://docs.google.com/document/d/1JDJeu5LXn6u9FfRvxqGX7EXw4JucXOpKEnHIZ9o40ho/edit"><div class="bird" id="entry2"></div></a>
+<a href="https://docs.google.com/document/d/1z4FXz7r50dfAFQEYm5iKJwPQNGrsx3Z4phehHx_Rn-M/edit"><div class="bird" id="entry3"></div></a>
+<a href="https://docs.google.com/document/d/1s_pDM2ImmyO8uEilS5F3Uw3uTRsJAPDdyG03ESs8tI8/edit"><div class="bird" id="entry4"></div></a>
+<a href="https://docs.google.com/document/d/1KtEuFhiJ2uF0nGAm2zvBzqES9QRl2zqPcU2CboEiJTI/edit"><div class="bird" id="entry5"></div></a>
+<a href="https://docs.google.com/document/d/1ZwL-1e1q6aY6RKJyhVtLBpEk3aPGxTD6Hv-8l03_Ykk/edit"><div class="bird" id="entry6"></div></a>
+<a href="https://docs.google.com/document/d/14RvGgyjZjpiBy2l95KAjIcItWcG8kRKic58m83UdpdM/edit"><div class="bird" id="entry7"></div></a>
+<a href="https://docs.google.com/document/d/172gDFNjH1s_wpUsj4gici2erAaY7iynCqysRKZFy0_E/edit"><div class="bird" id="entry8"></div></a>
+<a href="https://docs.google.com/document/d/1xaqKZOb2Tow_BcO8yIKWx49-L7DDL2dev4pphTRmcyo/edit"><div class="bird" id="entry9"></div></a>
+<a href="https://docs.google.com/document/d/1Ipu8HGXc322J2pa05tEBHRkhKg9qpz9pkz3z4VLMC_Q/edit"><div class="bird" id="entry10"></div></a>
+<a href="https://docs.google.com/document/d/1JlTPsQTvwnSfn8SfQgLiJZ3f0jGZ_-WFyh_8-K-EmpQ/edit"><div class="bird" id="entry11"></div></a>
+<a href="https://docs.google.com/document/d/1nf3GAV6vtp7-x95Qe3gFudMXnPDDucMfR06lPNVuDNs/edit"><div class="bird" id="entry12"></div></a>
+<a href="https://docs.google.com/document/d/1_s2DEjKPyZ5T0Vu2lIgHbeDIjPREb2uXmQn4hkUcpTU/edit"><div class="bird" id="entry13"></div></a>
+<a href="https://docs.google.com/document/d/101YTCA68LMw06lIk0uxs9_npAbH2pIRY3WAnZIqL8K4/edit"><div class="bird" id="entry14"></div></a>
+<a href="https://docs.google.com/document/d/1scRd2u5EwExGQNGJvRyjnpdywoJUBfIG_x3kMtYvI9k/edit"><div class="bird" id="entry15"></div></a>
+<a href="https://docs.google.com/document/d/1kHLf2iYcPnNO0eBW1RF597Q29u2ZdcpSO641rN7Y7Wc/edit#heading=h.hdt08e43yb42"><div class="bird" id="entry16"></div></a>
+<a href="https://docs.google.com/document/d/16JIa-m4yqKnTKcZHSX6oivMsRKXPIE7iNV4gqeMOySY/edit"><div class="bird" id="entry17"></div></a>
+<a href="https://docs.google.com/document/d/1TmjO1tsmiz4LiDa9KhZIWjBOhpo9se_ohAuUx1Qvz0E/edit"><div class="bird" id="entry18"></div></a>
+<a href="https://docs.google.com/document/d/1ftsxJR6PBjJuhwFecnbX0CtSkja4kTMhUmzfj-yJsHQ/edit"><div class="bird" id="entry19"></div></a>
+<a href="https://docs.google.com/document/d/1Mskb1oHyehhiNxfyINS7ToxYCpTq5Hy_Spl1NeXeNMM/edit#heading=h.lzc5liqpzd9"><div class="bird" id="entry20"></div></a>
+<a href="https://docs.google.com/document/d/1tN-sDIq_1WDd7Jmq8Cb4S-Xmg_3aC_PxNVpgr87xvQM/edit"><div class="bird" id="entry21"></div></a>
+<a href="https://docs.google.com/document/d/1KNiC0mVnbWk_IEBM_HD92tE15HxNqeoeyzzEs9asKSE/edit"><div class="bird" id="entry22"></div></a>
+<a href="https://docs.google.com/document/d/1zLgbB5iXC_YMWao13lJ7wyaeoyjJTefL4U3yKYVUHP4/edit"><div class="bird" id="entry23"></div></a>
+<a href="https://docs.google.com/document/d/1VB233pKNVqaEsqG0BU1bHRjVWxYwOOcpHjp1G_c3cYk/edit"><div class="bird" id="entry24"></div></a>
+<a href="https://docs.google.com/document/d/1jLtQbfj0p1JbgCKb15sN-HP1zBbS51D1AjvvbJa-rTE/edit"><div class="bird" id="entry25"></div></a>
+<a href="https://docs.google.com/document/d/1nGMZMcjGOkjsCBtaE0zg-MiuQ83WkPKZiYu9dNuTsZ0/edit"><div class="bird" id="entry26"></div></a>
+<a href="https://docs.google.com/document/d/12q6ovO40WBNIeTkWwlhBbCZDTo4Ft4K4gxuP6CMaYJk/edit#heading=h.r7khcedj2tg"><div class="bird" id="entry27"></div></a>
+<a href="https://docs.google.com/document/d/1gB8f8BXM8N8M-W1jWZh-RwShkKrA6wWyj7xvkJOv1wA/edit#heading=h.2xy24qzejlh4"><div class="bird" id="entry28"></div></a> 
+<a href="https://docs.google.com/document/d/1QTKqsQTwOnqGeXCilHC3gFzfXnAvsMer6YRLZU8mCs0/edit"><div class="bird" id="entry29"></div></a>
+<a href="https://docs.google.com/document/d/1p03mMKvkc4jhjlxpqqNZ-yY6zNG4GdhXfR7_xhprKcs/edit"><div class="bird" id="entry30"></div></a>
+<a href="https://docs.google.com/document/d/1f0TzXPHa8VTJ4eZEt6fq20bIszRcS6EGhxZLoGBLNVM/edit"><div class="bird" id="entry31"></div></a>
+<a href="https://docs.google.com/document/d/1zzOqnhuSYBwqnQjk2pUdDB6peP43wnNpM6NP-CWLRZQ/edit"><div class="bird" id="entry32"></div></a>
+<a href="https://docs.google.com/document/d/1MHgbY0t9cOLdSoKshSKIs05lELuFRruaglcVlTD8Z5w/edit"><div class="bird" id="entry33"></div></a>
+<a href="https://docs.google.com/document/d/1a0RjdDfGNgy9lq53PE3TrlMLrhAgoXr_UK-0LRKw9zQ/edit"><div class="bird" id="entry34"></div></a>
+<a href="https://docs.google.com/document/d/1kt2wiEoK4clVKtiClt1PwGOxIHyOpmfKAXnI8HHxlxU/edit"><div class="bird" id="entry35"></div></a>
+<a href="https://docs.google.com/document/d/1HDjV5i_zSfnDRB4M7fy4IfzmANsb2gbF1ozkkkt9rVA/edit"><div class="bird" id="entry36"></div></a>
+<a href="https://docs.google.com/document/d/19FuJ8BHDPqE1sAdYQc0owPJCQN4IwG87WU_D4KTuML4/edit"><div class="bird" id="entry37"></div></a>
+<a href="https://docs.google.com/document/d/12ArUS5XJem4pAWCJEBDd-ZRF4FcNuc60DUHcNQItaDQ/edit"><div class="bird" id="entry38"></div></a>
+<a href="https://docs.google.com/document/d/1ahFcN-2pTXveUOpXMRURRx37_urihHYKaX28--uHd-Y/edit"><div class="bird" id="entry39"></div></a>
+<a href="https://docs.google.com/document/d/11MvnQI8cUxu2PGhUEfUhhRQHRzPIEhTzKnsOIBD3OJo/edit"><div class="bird" id="entry40"></div></a>
+
+<a href="projects.html">
+<div id="menubar"> Projects</div>
+</a>
+
+
+<script type="text/javascript">
+
+var text = document.getElementById("text");
+var photo = document.getElementById('photo');
+
+var recipes = ["Big-A** Cookies", "Breakfast Parfait", "Broccoli Strudel Galore", "Crazy Eggwich", "Eggplant Parmesan", "Eggplant Polenta Bake", "Filet of Sole in Lemon Caper Butter Sauce (Burre Blanc or White Mule)", "FISH TACOS", "Fluffy Pillow Scrambled Eggs", "Fruit on the Floor", "F*** You Fishmonger Capellini", "Hangman's Pasta (Malfatti)", "Hollandaise Sauce", "Lasange Florentine Recipe", "Lemon Pasta with Tomatoes and Feta", "Maguro Take-a-Saki", "Mezzalune Grandi Nasi", "Minestrone", "Oatmeal for the Ages", "Pancakes and Crepes", "Pasta and the Whale", "Perfect Poached Eggs", "Peter's Hubcap Fish", "Poached Cod in Garlic Cream and Fennel", "Provencal Vegetable Soup", "Ricotta Gnocchi in Arugula Pesto or Rosmary Hazelnut Sauce", "Roast Salmon and Broccoli with Chili-Caper Vinaigrette", "Roast Veggies over Polenta topped with Feta", "Roasted Tomatoes, Fennel, White Beans and Cod Recipe", "Salmon with Potato Salad and Horseradish Yogurt", "Semi-Mexican Beans and Rice", "Smuggler's Strudel", "Summer Bell Sauce", "The Most Decadent French Toast", "The Pascal Salmon", "Triangoli", "Troll Boogers - Roasted Celery Root", "Vegetable Couscous Paella", "Voila Salad", "White Beans and Tuscan Kale"];
+
+function changeRecipe (){
+		var random = Math.floor(Math.random()*40)
+console.log(random)
+		text.innerText = recipes[random]
+
+		}
+		
+		var x = setInterval(changeRecipe, 200)
+
+		document.addEventListener("click", function chooseRecipe(){
+			var random = Math.floor(Math.random()*40)
+			console.log(random)
+		text.innerText = recipes[random]
+
+		clearInterval(x);
+
+	console.log(random + ".jpg")
+photo.style.backgroundImage = "url(./recipes/" + random + ".png)"
+
+})
+
+</script>
+</body>
+</html>
+
+<!-- this is a gift for a family friend. we cook a lot of things together, and I want to make a random recipe generator that will choose recipes for us to make. Once I get the basics, it would be fun to add images that go along with the recipes, if I have or if not to make it look cool.  -->

@@ -21,7 +21,6 @@ body{
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
-
 		}
 
 #menubar{
@@ -66,6 +65,7 @@ let photo = document.getElementById('photo');
 
 function bird() {
 var number = Math.floor(Math.random()*51);
+console.log(number + ".jpg")
 
 
 photo.style.backgroundImage = "url(./birds/" + number + ".jpg)"

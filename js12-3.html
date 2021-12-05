@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div></div>
+<script type="text/javascript">
+
+	function makeLatke(x) {
+		var latke = document.createElement('div');
+		document.body.appendChild(latke);
+		latke.style.width = "150px"
+		latke.style.height = "100px"
+		latke.style.display = "inline-block"
+		latke.style.backgroundImage = "url(latke.png)"
+		latke.style.backgroundSize = "cover"
+		latke.innerText = "Latke " + x;
+}
+
+for (var i=1; i<100; i=i+1)
+{
+	makeLatke(i);
+	}
+
+</script>
+
+</body>
+</html>
