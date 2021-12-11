@@ -318,8 +318,8 @@ body{
 </head>
 <body>
 
-<div id="photo"></div>
-
+<!-- <div id="photo"></div>
+ -->
 <div id="scroll"><div id="scrolltext">Scroll down to see all the recipes</div></div>
 
 <div id="endbar"></div>
@@ -380,9 +380,10 @@ body{
 <script type="text/javascript">
 
 var text = document.getElementById("text");
-var photo = document.getElementById('photo');
+var photo = document.createElement('div');
 
 var recipes = ["Big-A** Cookies", "Breakfast Parfait", "Broccoli Strudel Galore", "Crazy Eggwich", "Eggplant Parmesan", "Eggplant Polenta Bake", "Filet of Sole in Lemon Caper Butter Sauce (Burre Blanc or White Mule)", "FISH TACOS", "Fluffy Pillow Scrambled Eggs", "Fruit on the Floor", "F*** You Fishmonger Capellini", "Hangman's Pasta (Malfatti)", "Hollandaise Sauce", "Lasange Florentine Recipe", "Lemon Pasta with Tomatoes and Feta", "Maguro Take-a-Saki", "Mezzalune Grandi Nasi", "Minestrone", "Oatmeal for the Ages", "Pancakes and Crepes", "Pasta and the Whale", "Perfect Poached Eggs", "Peter's Hubcap Fish", "Poached Cod in Garlic Cream and Fennel", "Provencal Vegetable Soup", "Ricotta Gnocchi in Arugula Pesto or Rosmary Hazelnut Sauce", "Roast Salmon and Broccoli with Chili-Caper Vinaigrette", "Roast Veggies over Polenta topped with Feta", "Roasted Tomatoes, Fennel, White Beans and Cod Recipe", "Salmon with Potato Salad and Horseradish Yogurt", "Semi-Mexican Beans and Rice", "Smuggler's Strudel", "Summer Bell Sauce", "The Most Decadent French Toast", "The Pascal Salmon", "Triangoli", "Troll Boogers - Roasted Celery Root", "Vegetable Couscous Paella", "Voila Salad", "White Beans and Tuscan Kale"];
+var array2 = ["https://docs.google.com/document/d/1_9hmhVopCqs8am_5ZPN1O7c77FwRsW5Y1g-2Fk55q6k/edit", "https://docs.google.com/document/d/1JDJeu5LXn6u9FfRvxqGX7EXw4JucXOpKEnHIZ9o40ho/edit", "https://docs.google.com/document/d/1s_pDM2ImmyO8uEilS5F3Uw3uTRsJAPDdyG03ESs8tI8/edit", "https://docs.google.com/document/d/1z4FXz7r50dfAFQEYm5iKJwPQNGrsx3Z4phehHx_Rn-M/edit", "https://docs.google.com/document/d/1KtEuFhiJ2uF0nGAm2zvBzqES9QRl2zqPcU2CboEiJTI/edit", "https://docs.google.com/document/d/1ZwL-1e1q6aY6RKJyhVtLBpEk3aPGxTD6Hv-8l03_Ykk/edit", "https://docs.google.com/document/d/14RvGgyjZjpiBy2l95KAjIcItWcG8kRKic58m83UdpdM/edit", "https://docs.google.com/document/d/172gDFNjH1s_wpUsj4gici2erAaY7iynCqysRKZFy0_E/edit", "https://docs.google.com/document/d/1xaqKZOb2Tow_BcO8yIKWx49-L7DDL2dev4pphTRmcyo/edit", "https://docs.google.com/document/d/1Ipu8HGXc322J2pa05tEBHRkhKg9qpz9pkz3z4VLMC_Q/edit", "https://docs.google.com/document/d/1JlTPsQTvwnSfn8SfQgLiJZ3f0jGZ_-WFyh_8-K-EmpQ/edit", "https://docs.google.com/document/d/1nf3GAV6vtp7-x95Qe3gFudMXnPDDucMfR06lPNVuDNs/edit", "https://docs.google.com/document/d/1_s2DEjKPyZ5T0Vu2lIgHbeDIjPREb2uXmQn4hkUcpTU/edit", "https://docs.google.com/document/d/101YTCA68LMw06lIk0uxs9_npAbH2pIRY3WAnZIqL8K4/edit", "https://docs.google.com/document/d/1scRd2u5EwExGQNGJvRyjnpdywoJUBfIG_x3kMtYvI9k/edit", "https://docs.google.com/document/d/1kHLf2iYcPnNO0eBW1RF597Q29u2ZdcpSO641rN7Y7Wc/edit#heading=h.hdt08e43yb42", "https://docs.google.com/document/d/16JIa-m4yqKnTKcZHSX6oivMsRKXPIE7iNV4gqeMOySY/edit", "https://docs.google.com/document/d/1TmjO1tsmiz4LiDa9KhZIWjBOhpo9se_ohAuUx1Qvz0E/edit", "https://docs.google.com/document/d/1ftsxJR6PBjJuhwFecnbX0CtSkja4kTMhUmzfj-yJsHQ/edit", "https://docs.google.com/document/d/1Mskb1oHyehhiNxfyINS7ToxYCpTq5Hy_Spl1NeXeNMM/edit#heading=h.lzc5liqpzd9", "https://docs.google.com/document/d/1tN-sDIq_1WDd7Jmq8Cb4S-Xmg_3aC_PxNVpgr87xvQM/edit", "https://docs.google.com/document/d/1KNiC0mVnbWk_IEBM_HD92tE15HxNqeoeyzzEs9asKSE/edit", "https://docs.google.com/document/d/1zLgbB5iXC_YMWao13lJ7wyaeoyjJTefL4U3yKYVUHP4/edit", "https://docs.google.com/document/d/1VB233pKNVqaEsqG0BU1bHRjVWxYwOOcpHjp1G_c3cYk/edit", "https://docs.google.com/document/d/1jLtQbfj0p1JbgCKb15sN-HP1zBbS51D1AjvvbJa-rTE/edit", "https://docs.google.com/document/d/1nGMZMcjGOkjsCBtaE0zg-MiuQ83WkPKZiYu9dNuTsZ0/edit", "https://docs.google.com/document/d/12q6ovO40WBNIeTkWwlhBbCZDTo4Ft4K4gxuP6CMaYJk/edit#heading=h.r7khcedj2tg", "https://docs.google.com/document/d/1gB8f8BXM8N8M-W1jWZh-RwShkKrA6wWyj7xvkJOv1wA/edit#heading=h.2xy24qzejlh4", "https://docs.google.com/document/d/1QTKqsQTwOnqGeXCilHC3gFzfXnAvsMer6YRLZU8mCs0/edit", "https://docs.google.com/document/d/1p03mMKvkc4jhjlxpqqNZ-yY6zNG4GdhXfR7_xhprKcs/edit", "https://docs.google.com/document/d/1f0TzXPHa8VTJ4eZEt6fq20bIszRcS6EGhxZLoGBLNVM/edit", "https://docs.google.com/document/d/1zzOqnhuSYBwqnQjk2pUdDB6peP43wnNpM6NP-CWLRZQ/edit", "https://docs.google.com/document/d/1MHgbY0t9cOLdSoKshSKIs05lELuFRruaglcVlTD8Z5w/edit", "https://docs.google.com/document/d/1a0RjdDfGNgy9lq53PE3TrlMLrhAgoXr_UK-0LRKw9zQ/edit", "https://docs.google.com/document/d/1kt2wiEoK4clVKtiClt1PwGOxIHyOpmfKAXnI8HHxlxU/edit", "https://docs.google.com/document/d/1HDjV5i_zSfnDRB4M7fy4IfzmANsb2gbF1ozkkkt9rVA/edit", "https://docs.google.com/document/d/19FuJ8BHDPqE1sAdYQc0owPJCQN4IwG87WU_D4KTuML4/edit", "https://docs.google.com/document/d/12ArUS5XJem4pAWCJEBDd-ZRF4FcNuc60DUHcNQItaDQ/edit", "https://docs.google.com/document/d/1ahFcN-2pTXveUOpXMRURRx37_urihHYKaX28--uHd-Y/edit", "https://docs.google.com/document/d/11MvnQI8cUxu2PGhUEfUhhRQHRzPIEhTzKnsOIBD3OJo/edit",]
 
 function changeRecipe (){
 		var random = Math.floor(Math.random()*40)
@@ -397,6 +398,17 @@ console.log(random)
 			var random = Math.floor(Math.random()*40)
 			console.log(random)
 		text.innerText = recipes[random]
+
+
+		var link = document.createElement("a");
+		document.body.appendChild(link);
+
+		link.href = array2[random]
+
+		link.appendChild(photo)
+		photo.id = "photo";
+
+		// thing2.innerText = recipes[random]
 
 		clearInterval(x);
 

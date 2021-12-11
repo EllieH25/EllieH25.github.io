@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+	var array1 = [
+"latke", "applesauce", "potato"
+	]
+
+	var array2 = ["latka.html", "applesauce.html", "potato.html"]
+
+	function cookRecipe(){
+		var random = Math.floor(Math.random()*3);
+		var thing = document.createElement("a");
+
+		thing.href = array2[random]
+		var thing2 = document.createElement("div");
+
+		document.body.appendChild(thing);
+		thing.appendChild(thing2)
+		thing2.innerText = array1[randomNumber]
+	}
+
+	cookRecipe();
+</script>
+</body>
+</html>
