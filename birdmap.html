@@ -1,3 +1,7 @@
+<!-- Pins for Costa Rica and California exist, but are deactivated. There are the appropriate images and links, but the links are commented out and images have a "1" next to them. Same with the world map, for with all the pins. All the pages and images already exist, they are just commented out. If they are updated and are of the same quality as the new york pins, reactivate them.
+
+IF ADDING CALIFORNIA AND COSTA RICA, DELETE THE NEW YORK PIN ON THIS PAGE, AND JUST CHANGE TO worldmap1.png.   -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +32,7 @@ body{
 #usa{
 	z-index: 1;
 	width: 240px;
-	height:100px;
+	height:120px;
 	position:absolute;
 	top: 32%;
 	left:12%;
@@ -46,7 +50,7 @@ body{
 	width: 210px;
 	height:100px;
 	position:absolute;
-	top: 46%;
+	top: 48%;
 	left:15%;
 }
 #samerica{
@@ -96,8 +100,19 @@ body{
 	height:200px;
 	position:absolute;
 	top: 1.5%;
-	left:57%;
-	
+	left:57%;	
+}
+
+#usapin{
+	z-index: 2;
+	width: 15px;
+	height:26px;
+	position: absolute;
+	top: 35.5%;
+	left: 25.75%;
+	background-image: url(pin.png);
+	background-size: cover;
+	background-position: center;
 }
 
 	</style>
@@ -118,6 +133,8 @@ body{
 <a href="asia.html"><div id="asia"></div></a>
 <a href="indonesia.html"><div id="indonesia"></div></a>
 <a href="russia.html"><div id="russia"></div></a>
+
+<a href="usamap.html"> <div id="usapin"></div></a>
 
 </body>
 </html>

@@ -1,3 +1,9 @@
+<!-- 
+Notes for updating Projects:
+1. the boxes are separated by 18vw in height, copy the div above where it will go for width apart. 
+2. move the "bottom" div when adding a new row -- it adds a little room before the bottom so it doesn't look weird. 
+ -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,10 +25,10 @@
 }
 #projects{
 	width: 11.25vw;
-	height: 8vh;
+	height: 8vw;
 	position: absolute;
-	top: 5px;
-	left: 44%;
+	top: .5vw;
+	left: 44vw;
 	font-size: 3.75vw;
 	color: black;
 	text-align: center;
@@ -33,67 +39,79 @@ body{
 }
 #birdmap{
 	width: 28vw;
-	height: 28vh;
-	background-image: url(map.png);
+	height: 14vw;
+	background-image: url(projectmap.png);
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 15%;
-	left: 2%;
+	top: 7vw;
+	left: 2vw;
 }
 #circle{
 	width: 28vw;
-	height: 28vh;
+	height: 14vw;
 	background-image: url(circles.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 15%;
-	left: 36%;
+	top: 7vw;
+	left: 36vw;
 }
 #egg{
 	width: 28vw;
-	height: 28vh;
+	height: 14vw;
 	background-image: url(egg.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 15%;
-	left: 69.5%;
+	top: 7vw;
+	left: 69.5vw;
 }
 #birdgenerator{
 	width: 28vw;
-	height: 28vh;
+	height: 14vw;
 	background-image: url(generator.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 50%;
-	left: 2%;
+	top: 25vw;
+	left: 2vw;
 }
 #recipes{
 	width: 28vw;
-	height: 28vh;
+	height: 14vw;
 	background-image: url(recipes.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 50%;
-	left: 36%;
+	top: 25vw;
+	left: 36vw;
 }
 #slides{
 	width: 28vw;
-	height: 28vh;
+	height: 14vw;
 	background-image: url(slides2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 50%;
-	left: 69.5%;
+	top: 25vw;
+	left: 69.5vw;
+}
+#migration{
+	width: 28vw;
+	height: 14vw;
+	background-image: url(migration.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 43vw;
+	left: 2vw;
 }
 .text{
 	position: relative;
-	top: 105%;
+	top: 104%;
 	color: black;
 	text-align: center;
 	font-size: 1.1vw;
@@ -103,6 +121,14 @@ body{
 	border-width: .1vw;
 	border-color: black;
 }
+
+#bottom{
+	width: 1vw;
+	height: 4vw;
+	position: absolute;
+	top: 57vw;
+}
+
 
 </style>
 
@@ -114,6 +140,7 @@ body{
 </a>
 
 <div id="projects"> Projects</div>
+<div id="bottom"></div>
 
 <a href="birdmap.html"><div class="title" id="birdmap">
 	<div class="text"> Bird Map (in progress)</div></div></a>
@@ -128,6 +155,9 @@ body{
 	<div class="text"> Recipe Chooser</div></div></a>
 <a href="https://docs.google.com/presentation/d/1CxcniWRIptkIbYnCXDSxzpr5xGHzXp3gUhgh4D7MIP8/edit?usp=sharing"> <div class="title" id="slides">
 	<div class="text"> Bird Tracker Google Slides Presentation</div></div></a>
+<a href="migrationstats.html"><div class="title" id="migration">
+	<div class="text"> Migration Map (in progress)</div></div></a>
+
 
 </body>
 </html>

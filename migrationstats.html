@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+#menubar{
+	z-index: 2;
+	width: 7vw;
+	height: 2.5vw;
+	background-color: lightskyblue;
+	position: absolute;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+body{
+	background-color: #cce7ff;
+}
+#map{
+	width: 75vw;
+	height: 47.75vw;
+	position: absolute;
+	left: 24.25vw;
+	background-image: url(./migration/flyways.jpeg);
+	background-size: cover;
+	z-index: -1;
+}
+
+#knot{
+	width: 6vw;
+	height:4vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: knot;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes knot {
+	0% {top: 40vw; left: 43vw;background-image: url(./migration/atlantic.png);}
+	14% {top: 28vw; left: 51vw;background-image: url(./migration/atlantic.png);}
+	28% {top: 16vw; left: 44vw;background-image: url(./migration/atlantic.png);}
+	42% {top: 7vw; left: 44vw;background-image: url(./migration/atlantic.png);}
+	57% {top: 3.5vw; left: 32vw;background-image: url(./migration/atlantic.png);}
+	57.01% {top: 3.5vw; left: 32vw;background-image: url(./migration/atlantic1.png);}
+	71% {top: 7vw; left: 32vw;background-image: url(./migration/atlantic1.png);}
+	85% {top: 27vw; left: 44vw;background-image: url(./migration/atlantic1.png);}
+	100% {top: 40vw; left: 43vw;background-image: url(./migration/atlantic1.png);}
+}
+
+#hawk{
+	width: 6vw;
+	height:6vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: hawk;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes hawk {
+	0% {top: 6vw; left: 24.75vw;background-image: url(./migration/hawk1.png);}
+	14% {top: 13vw; left: 30vw;background-image: url(./migration/hawk1.png);}
+	28% {top: 28vw; left: 41.5vw;background-image: url(./migration/hawk1.png);}
+	42% {top: 36vw; left: 42vw;background-image: url(./migration/hawk1.png);}
+	42.01% {top: 36vw; left: 42vw;background-image: url(./migration/hawk.png);}
+	57% {top: 30vw; left: 47.5vw;background-image: url(./migration/hawk.png);}
+	71% {top: 15vw; left: 39vw;background-image: url(./migration/hawk.png);}
+	85% {top: 3vw; left: 37vw;background-image: url(./migration/hawk.png);}
+	92% {top: 3vw; left: 31vw;background-image: url(./migration/hawk.png);}
+	100% {top: 6vw; left: 24.5vw;background-image: url(./migration/hawk.png);}
+}
+
+#tern{
+	width: 6vw;
+	height:6vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: tern;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes tern {
+	0% {top: 25vw; left: 41vw;background-image: url(./migration/tern.png);}
+	20% {top: 5vw; left: 24vw;background-image: url(./migration/tern.png);}
+	20.01% {top: 5vw; left: 24vw;background-image: url(./migration/tern1.png);}
+	40% {top: 11vw; left: 25vw;background-image: url(./migration/tern1.png);}
+	60% {top: 21vw; left: 34vw;background-image: url(./migration/tern1.png);}
+	80% {top: 39vw; left: 40vw;background-image: url(./migration/tern1.png);}
+	80.01% {top: 39vw; left: 40vw;background-image: url(./migration/tern.png);}
+	100% {top: 25vw; left: 41vw;background-image: url(./migration/tern.png);}
+}
+
+#wheatear{
+	width: 6vw;
+	height:6vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: wheatear;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes wheatear {
+	0% {top: 2vw; left: 32.5vw;background-image: url(./migration/wheatear1.png);}
+	10% {top: 9vw; left: 45vw;background-image: url(./migration/wheatear1.png);}
+	20% {top: 7.5vw; left: 53vw;background-image: url(./migration/wheatear1.png);}
+	30% {top: 22vw; left: 53vw;background-image: url(./migration/wheatear1.png);}
+	40% {top: 32vw; left: 61.5vw;background-image: url(./migration/wheatear1.png);}
+	40.01% {top: 32vw; left: 61.5vw;background-image: url(./migration/wheatear2.png);}
+	50% {top: 21vw; left: 60vw;background-image: url(./migration/wheatear2.png);}
+	60% {top: 20vw; left: 55vw;background-image: url(./migration/wheatear2.png);}
+	60.01% {top: 20vw; left: 55vw;background-image: url(./migration/wheatear.png);}
+	70% {top: 11vw; left: 58vw;background-image: url(./migration/wheatear.png);}
+	80% {top: 3vw; left: 83.5vw;background-image: url(./migration/wheatear.png);}
+	80.01% {top: 3vw; left: 83.5vw;background-image: url(./migration/wheatear2.png);}
+	100% {top: 2vw; left: 32.5vw;background-image: url(./migration/wheatear2.png);}
+}
+
+
+.text{
+	width: 23vw;
+	position: absolute;
+	top: 5vw;
+	opacity: 0;
+}
+
+</style>
+
+</head>
+<body>
+
+<a href="projects.html">
+<div id="menubar"> Projects</div>
+</a>
+
+<div id="map"></div>
+<div id="knot"></div>
+<div id="hawk"></div>
+<div id="tern"></div>
+<div id="wheatear"></div>
+
+<div class="text" id="knottext">I am a Red Knot!</div>
+<div class="text" id="hawktext">I am a Swainson's Hawk!</div>
+<div class="text" id="terntext">I am a Arctic Tern!</div>
+<div class="text" id="wheateartext">I am a Wheatear!</div>
+
+<script type="text/javascript">
+
+
+	var knot = document.getElementById('knot')
+	var hawk = document.getElementById('hawk')
+	var tern = document.getElementById('tern')
+	var wheatear = document.getElementById('wheatear')
+
+	function hawkInfo (){
+		hawktext.style.opacity = "1";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "0";
+		console.log("eh?");
+	}
+	hawk.addEventListener("click", hawkInfo)
+
+	function knotInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "1";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "0";
+		console.log("ah?");
+	}
+	knot.addEventListener("click", knotInfo)
+	
+	function ternInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "1";
+		wheateartext.style.opacity = "0";
+		console.log("oh?");
+	}
+	tern.addEventListener("click", ternInfo)
+
+	function wheatearInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "1";
+		console.log("uh?");
+	}
+	wheatear.addEventListener("click", wheatearInfo)
+
+</script>
+
+</body>
+</html>
