@@ -71,7 +71,7 @@ body{
 #birdgenerator{
 	width: 28vw;
 	height: 14vw;
-	background-image: url(generator.png);
+	background-image: url(./generator/6.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -158,6 +158,21 @@ body{
 <a href="migrationstats.html"><div class="title" id="migration">
 	<div class="text"> Migration Map</div></div></a>
 
+<script type="text/javascript">
+	
+let birdgenerator = document.getElementById('birdgenerator');
+
+function bird() {
+var number = Math.floor(Math.random()*17);
+console.log(number + ".png")
+
+
+birdgenerator.style.backgroundImage = "url(./generator/" + number + ".png)"
+}
+
+bird()
+
+</script>
 
 </body>
 </html>
