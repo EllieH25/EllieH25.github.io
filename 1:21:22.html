@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">	
+#genevra{
+	width: 10vw;
+	height: 10vw;
+	background-image: url(genevra.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+</style>
+</head>
+<body>
+
+<div id="genevra"></div>
+
+<script type="text/javascript">
+	
+	var genevra = document.body.getElementbyID("genevra")
+
+	genevra.addEventListener("click", function(){
+		console.log("hi")
+		genevra.style.backgroundImage = url(mouth.jpg)
+		
+	})
+
+</script>
+
+</body>
+</html>

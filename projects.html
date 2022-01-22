@@ -109,6 +109,18 @@ body{
 	top: 43vw;
 	left: 2vw;
 }
+
+#portfolio{
+	width: 28vw;
+	height: 14vw;
+	background-image: url(portfolio.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 43vw;
+	left: 36vw;
+}
 .text{
 	position: relative;
 	top: 104%;
@@ -157,6 +169,10 @@ body{
 	<div class="text"> Bird Tracker Google Slides Presentation</div></div></a>
 <a href="migrationstats.html"><div class="title" id="migration">
 	<div class="text"> Migration Map</div></div></a>
+<a href="portfolio.html"><div class="title" id="portfolio">
+	<div class="text"> Bird Photos Portfolio (In progress)</div></div></a>
+
+
 
 <script type="text/javascript">
 	
@@ -167,7 +183,7 @@ var number = Math.floor(Math.random()*17);
 console.log(number + ".png")
 
 
-birdgenerator.style.backgroundImage = "url(./generator/" + number + ".png)"
+birdgenerator.style.backgroundImage = "url(./birds/" + number + ".png)"
 }
 
 bird()
