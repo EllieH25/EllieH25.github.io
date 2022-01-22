@@ -109,7 +109,6 @@ body{
 	top: 43vw;
 	left: 2vw;
 }
-
 #portfolio{
 	width: 28vw;
 	height: 14vw;
@@ -121,6 +120,7 @@ body{
 	top: 43vw;
 	left: 36vw;
 }
+
 .text{
 	position: relative;
 	top: 104%;
@@ -133,7 +133,6 @@ body{
 	border-width: .1vw;
 	border-color: black;
 }
-
 #bottom{
 	width: 1vw;
 	height: 4vw;
@@ -170,7 +169,7 @@ body{
 <a href="migrationstats.html"><div class="title" id="migration">
 	<div class="text"> Migration Map</div></div></a>
 <a href="portfolio.html"><div class="title" id="portfolio">
-	<div class="text"> Bird Photos Portfolio (In progress)</div></div></a>
+	<div class="text"> Bird Photos Portfolio (in progress)</div></div></a>
 
 
 
@@ -179,9 +178,8 @@ body{
 let birdgenerator = document.getElementById('birdgenerator');
 
 function bird() {
-var number = Math.floor(Math.random()*17);
+var number = Math.floor(Math.random()*16);
 console.log(number + ".png")
-
 
 birdgenerator.style.backgroundImage = "url(./birds/" + number + ".png)"
 }
