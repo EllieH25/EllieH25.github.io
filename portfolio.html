@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bird Portfolio</title>
+	<title>Bird Photo Portfolio</title>
+
 	<style type="text/css">
-body{
-	background-color: #cce7ff;
-}
+	
 #menubar{
 	z-index: 2;
 	width: 7vw;
@@ -21,202 +20,102 @@ body{
 #journal{
 	width: 40vw;
 	height: 4vw;
-	position: absolute;
-	top: .5vw;
-	left: 30vw;
 	font-size: 3.75vw;
 	color: black;
 	text-align: center;
 	text-decoration: underline;
 }
-.bird{
-	width: 12vw;
-	height: 8vw;
+
+.squares{
+	width:12vw;
+	height:8vw;
+	margin:.95vw;
+	display: inline-block;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	position: absolute;
-	color: black;
-	font-size: 1.1vw;
+	transition:1s;
+	position: relative;
 	border-style: solid;
 	border-width: .1vw;
 	border-color: black;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		}
+
+body{
+	margin-bottom: 20px;
+	background-color: #cce7ff;	
 }
 
+#box{
+	width: 36vw;
+	height: 24vw;
+	border-style: solid;
+	border-width: .1vw;
+	border-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 3vw;
+	margin-top: 3vw;
+}
 
-#entry0{
-	background-image: url(./portfolio/0.jpg);
-	top: 7vw;
-	left: 2vw;
+.text{
+	position: relative;
+	top: 45%;
+	color: black;
+	text-align: center;
+	font-size: 1.1vw;
+	z-index: -1;
 }
-#entry1{
-	background-image: url(./portfolio/1.jpg);
-	top: 7vw;
-	left: 16vw;
-}
-#entry2{
-	background-image: url(./portfolio/2.jpg);
-	top: 7vw;
-	left: 30vw;
-}
-#entry3{
-	background-image: url(./portfolio/3.jpg);
-	top: 7vw;
-	left: 44vw;
-}
-#entry4{
-	background-image: url(./portfolio/4.jpg);
-	top: 7vw;
-	left: 58vw;
-}
-#entry5{
-	background-image: url(./portfolio/5.jpg);
-	top: 7vw;
-	left: 72vw;
-}
-#entry6{
-	background-image: url(./portfolio/6.jpg);
-	top: 7vw;
-	left: 86vw;
-}
-#entry7{
-	background-image: url(./portfolio/7.jpg);
-	top: 16vw;
-	left: 2vw;
-}
-#entry8{
-	background-image: url(./portfolio/8.jpg);
-	top: 16vw;
-	left: 16vw;
-}
-#entry9{
-	background-image: url(./portfolio/9.jpg);
-	top: 16vw;
-	left: 30vw;
-}
-#entry10{
-	background-image: url(./portfolio/10.jpg);
-	top: 16vw;
-	left: 44vw;
-}
-#entry11{
-	background-image: url(./portfolio/11.jpg);
-	top: 16vw;
-	left: 58vw;
-}
-#entry12{
-	background-image: url(./portfolio/12.jpg);
-	top: 16vw;
-	left: 72vw;
-}
-#entry13{
-	background-image: url(./portfolio/13.jpg);
-	top: 16vw;
-	left: 86vw;
-}
-#entry14{
-	background-image: url(./portfolio/14.jpg);
-	top: 25vw;
-	left: 2vw;
-}
-#entry15{
-	background-image: url(./portfolio/15.jpg);
-	top: 25vw;
-	left: 16vw;
-}
-#entry16{
-	background-image: url(./portfolio/16.jpg);
-	top: 25vw;
-	left: 30vw;
-}
-#entry17{
-	background-image: url(./portfolio/17.jpg);
-	top: 25vw;
-	left: 44vw;
-}
-#entry18{
-	background-image: url(./portfolio/18.jpg);
-	top: 25vw;
-	left: 58vw;
-}
-#entry19{
-	background-image: url(./portfolio/19.jpg);
-	top: 25vw;
-	left: 72vw;
-}
-#entry20{
-	background-image: url(./portfolio/20.jpg);
-	top: 25vw;
-	left: 86vw;
-}
-/*#entry21{
-	background-image: url(./portfolio/21.jpg);
-	top: 34vw;
-	left: 2vw;
-}
-#entry22{
-	background-image: url(./portfolio/22.jpg);
-	top: 34vw;
-	left: 16vw;
-}
-#entry23{
-	background-image: url(./portfolio/23.jpg);
-	top: 34vw;
-	left: 30vw;
-}
-#entry24{
-	background-image: url(./portfolio/24.jpg);
-	top: 34vw;
-	left: 44vw;
-}
-#entry25{
-	background-image: url(./portfolio/25.jpg);
-	top: 34vw;
-	left: 58vw;
-}
-#entry26{
-	background-image: url(./portfolio/26.jpg);
-	top: 34vw;
-	left: 72vw;
-}*/
-
-</style>
+	</style>
 </head>
 <body>
 
+<center>
 <div id="journal"> Bird Photos Portfolio</div>
+<div id="box">
+	<div class="text"> (Click an image to see it larger!)</div>
+</div>
+</center>
+
 
 <a href="projects.html">
 <div id="menubar"> Projects</div>
 </a>
+<script type="text/javascript">
 
-<div class="bird" id="entry0"></div></a>
-<div class="bird" id="entry1"></div></a>
-<div class="bird" id="entry2"></div></a>
-<div class="bird" id="entry3"></div></a>
-<div class="bird" id="entry4"></div></a>
-<div class="bird" id="entry5"></div></a>
-<div class="bird" id="entry6"></div></a>
-<div class="bird" id="entry7"></div></a>
-<div class="bird" id="entry8"></div></a>
-<div class="bird" id="entry9"></div></a>
-<div class="bird" id="entry10"></div></a>
-<div class="bird" id="entry11"></div></a>
-<div class="bird" id="entry12"></div></a>
-<div class="bird" id="entry13"></div></a>
-<div class="bird" id="entry14"></div></a>
-<div class="bird" id="entry15"></div></a>
-<div class="bird" id="entry16"></div></a>
-<div class="bird" id="entry17"></div></a>
-<div class="bird" id="entry18"></div></a>
-<div class="bird" id="entry19"></div></a>
-<div class="bird" id="entry20"></div></a>
-<!-- <div class="bird" id="entry21"></div></a>
-<div class="bird" id="entry22"></div></a>
-<div class="bird" id="entry23"></div></a>
-<div class="bird" id="entry24"></div></a>
-<div class="bird" id="entry25"></div></a>
-<div class="bird" id="entry26"></div></a> -->
+	var counter = -1;
 
+	var box = document.getElementById('box');
+
+	
+	function makeSquare (input){
+		var square = document.createElement("div");
+		document.body.appendChild(square);
+		square.style.backgroundImage = "url(./portfolio/"+input+".jpg)"
+		square.classList.add("squares");
+
+
+		square.addEventListener("click", function () {
+
+			box.style.backgroundImage = square.style.backgroundImage;
+
+		})
+		// square.addEventListener(
+		// 	"click", function(){
+		// 		var square = document.createElement("div");
+		// document.body.appendChild(square);
+		// square.style.backgroundImage = "url(./portfolio/"+input+".jpg)"
+		// square.classList.add("squares");
+				
+		// 	})
+	}
+
+	for(var i=1; i<29; i=i+1){
+		makeSquare(i);
+	}
+
+</script>
 </body>
 </html>
