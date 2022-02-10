@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Bird ID Game</title>
 
 	<style type="text/css">
 		
 #text{
-	width: 7vw;
+	width: 8vw;
 	height: 10vw;
 	color: black;
 	font-size: 1.5vw;
 	position: absolute;
-	top: 14vw;
+	top: 20vw;
+	left: 1vw;
 }
 
 body{
@@ -40,7 +41,7 @@ body{
 }
 #info{
 	z-index: 3;
-	width: 7vw;
+	width: 8vw;
 	height: 1vw;
 	background-color: #cce7ff;
 	color: black;
@@ -57,7 +58,7 @@ body{
 <a href="projects.html">
 <div id="menubar"> Projects</div>
 </a>
-<div id="info">Click to see an image!</div>
+<div id="info">Click to see an image, click again to see the name of the bird in that image!</div>
 <div id="text"> </div>
 <div id="photo"></div>
 
@@ -67,19 +68,27 @@ body{
 
 	let photo = document.getElementById('photo');
 	var text = document.getElementById("text");
-	var counter = -1
+	var counter = 0
+	var number;
+
+function clickCount (){
+		counter = counter +1
+	if (counter % 2 == 1) {number = Math.floor(Math.random()*56)}
 
 function bird() {
 console.log(number + ".jpg")
-var number = Math.floor(Math.random()*56);
 
-photo.style.backgroundImage = "url(./birds/" + number + ".jpg)"
-text.innerText = array[number]
+if (counter % 2 == 1) {photo.style.backgroundImage = "url(./birds/" + number + ".jpg)"
+text.style.opacity = 0}
+if (counter % 2 == 0) {text.innerText = array[number]
+text.style.opacity = 1}
 
 }
 
+bird()
+}
 
-document.addEventListener("click", bird)
+document.addEventListener("click", clickCount)
 
 </script>
 
