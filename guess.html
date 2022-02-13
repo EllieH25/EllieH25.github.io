@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bird ID Game</title>
+
+	<style type="text/css">
+		
+#text{
+	max-width: 9vw;
+	color: black;
+	font-size: 1.5vw;
+	position: absolute;
+	top: 20vw;
+	left: 0.5vw;
+	background-color: #66b3ff;
+	opacity: 0;
+}
+
+body{
+	background-color: #cce7ff;
+}
+#photo{
+	z-index: -1;
+	width: 98.75vw;
+	height: 97vh;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+		}
+
+#menubar{
+	z-index: 2;
+	width: 6vw;
+	height: 2.5vw;
+	background-color: lightskyblue;
+	position: absolute;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+#info{
+	z-index: 3;
+	width: 8vw;
+	height: 1vw;
+	background-color: #cce7ff;
+	color: black;
+	font-size: 1.25vw;
+	position: absolute;
+	top: 5vw;
+	left: .85vw;
+
+}
+
+	</style>
+</head>
+<body>
+<a href="birds.html">
+<div id="menubar"> Back</div>
+</a>
+<div id="info">Click to see an image, click again to see the name of the bird in that image!</div>
+<div id="text"> </div>
+<div id="photo"></div>
+
+<script type="text/javascript">
+	
+	var array = ["Tufted Titmouse","American Goldfinch","Red-Bellied Woodpecker","Tufted Titmouse","Tufted Titmouse","Black-Capped Chickadee","Yellow-Rumped Warbler","Northern Cardinal","House Finch","White-Breasted Nuthatch","Song Sparrow","House Finches and American Goldfinch","Yellow Warbler","Yellow Warbler","Gray Catbird and American Goldfinch","Northern Parula","Ruby-Throated Hummingbird","American Redstart","Northern Cardinals","American Goldfinch","Downy Woodpecker","Ruby-Throated Hummingbird","Great Blue Heron","Mallards","Ruby-Throated Hummingbird","Mallard","Bald Eagle","Black-And-White Warbler","Black-Capped Chickadee and Downy Woodpecker","House Finches and Tufted Titmouse","White-Breasted Nuthatch","Tufted Titmouse","Hooded Merganser","Red-Breasted Nuthatch","Black-Throated Blue Warbler","Hooded Merganser","Canada Goose","Bufflehead","Northern Mockingbird","Hermit Thrush","Barred Owl","Red-Bellied Woodpecker","American Kestrel","Black-Capped Chickadee and American Goldfinch","Yellow-Bellied Sapsucker","Northern Cardinal","Black-Capped Chickadee","Barred Owl","Cerulean Warbler","White-Throated Sparrow","Carolina Wren","Blue Jay","White-Throated Sparrow","White-Throated Sparrow","Northern Cardinal","Blue Jay"]
+
+	let photo = document.getElementById('photo');
+	var text = document.getElementById("text");
+	var counter = 0
+	var number;
+
+function clickCount (){
+		counter = counter +1
+	if (counter % 2 == 1) {number = Math.floor(Math.random()*56)}
+
+function bird() {
+console.log(number + ".jpg")
+
+if (counter % 2 == 1) {photo.style.backgroundImage = "url(./birds/" + number + ".jpg)"
+text.style.opacity = 0}
+if (counter % 2 == 0) {text.innerText = array[number]
+text.style.opacity = 1}
+
+}
+
+bird()
+}
+
+document.addEventListener("click", clickCount)
+
+</script>
+
+</body>
+</html>
+
+<!-- Components:
+1. JavaScript to randomly generate an image (can use bird generator code)
+2.  An array that corresponds with the 50 photos of the names of the birds in the photos. 
+
+
+Next Steps:
+
+3. If able, code that also lists two names before and after the chosen one (in a random order) to click on to guess, then reveal correct (like that person's color game thing)
+
+Figure out how to make it so that when you click once it chooses a number and displays the photo corresponding to that number, when you click again, it also displays the corresponding text from the array, but from the same variable. (Just ask Molly about counters)
+ -->
+

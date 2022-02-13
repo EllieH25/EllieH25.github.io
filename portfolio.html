@@ -4,10 +4,9 @@
 	<title>Bird Photo Portfolio</title>
 
 	<style type="text/css">
-	
 #menubar{
 	z-index: 2;
-	width: 7vw;
+	width: 6vw;
 	height: 2.5vw;
 	background-color: lightskyblue;
 	position: absolute;
@@ -16,6 +15,20 @@
 	font-size: 2vw;
 	color: white;
 	text-align: center;
+}	
+#info{
+	z-index: 2;
+	width: 26vw;
+	height: 31vw;
+/*	background-color: lightskyblue;*/
+	position: absolute;
+	top: 4vw;
+	left: 2vw;
+	font-size: 1.25vw;
+	font-family: "Times New Roman";
+}
+h2{
+	text-decoration: underline;
 }
 #journal{
 	width: 40vw;
@@ -24,6 +37,7 @@
 	color: black;
 	text-align: center;
 	text-decoration: underline;
+	font-family: "Times New Roman";
 }
 .squares{
 	width:13vw;
@@ -66,17 +80,26 @@ body{
 </head>
 <body>
 
+<!-- <a href="birds.html">
+<div id="menubar"> Back</div>
+</a> -->
+
 <center>
+
 <div id="journal"> Bird Photos Portfolio</div>
+
 <div id="box">
 	<div class="text"> (Click an image to see it larger!)</div>
 </div>
+
 </center>
 
+<div id="info">
+	<h2>Info</h2>
+Over quarantine, I started photographing birds that I saw in Central Park and at my bird feeder. These are 30 of my best photos. My favorite bird is the Black-Capped Chickade, which I have a few photos of at my feeder. The rarest bird I've seen is the Cerulean Warbler. 
+</div>
 
-<a href="projects.html">
-<div id="menubar"> Projects</div>
-</a>
+
 <script type="text/javascript">
 
 	var counter = -1;

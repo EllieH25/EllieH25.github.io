@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Migration Map</title>
+<style type="text/css">
+#menubar{
+	z-index: 2;
+	width: 6vw;
+	height: 2.5vw;
+	background-color: lightskyblue;
+	position: absolute;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+body{
+	background-color: #cce7ff;
+}
+#map{
+	width: 75vw;
+	height: 47.75vw;
+	position: absolute;
+	left: 24.25vw;
+	background-image: url(./migration/flyways.jpeg);
+	background-size: cover;
+	z-index: -1;
+}
+
+#knot{
+	z-index: 2;
+	width: 6vw;
+	height:4vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: knot;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes knot {
+	0% {top: 40vw; left: 43vw;background-image: url(./migration/knot1.png);}
+	14% {top: 28vw; left: 51vw;background-image: url(./migration/knot1.png);}
+	14.01% {top: 28vw; left: 51vw;background-image: url(./migration/knot.png);}
+	28% {top: 16vw; left: 44vw;background-image: url(./migration/knot.png);}
+	42% {top: 7vw; left: 44vw;background-image: url(./migration/knot.png);}
+	57% {top: 3.5vw; left: 32vw;background-image: url(./migration/knot.png);}
+	57.01% {top: 3.5vw; left: 32vw;background-image: url(./migration/knot1.png);}
+	71% {top: 7vw; left: 32vw;background-image: url(./migration/knot1.png);}
+	85% {top: 27vw; left: 44vw;background-image: url(./migration/knot1.png);}
+	100% {top: 40vw; left: 43vw;background-image: url(./migration/knot1.png);}
+}
+
+#hawk{
+	z-index: 2;
+	width: 7vw;
+	height:7vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: hawk;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes hawk {
+	0% {top: 5.5vw; left: 23vw;background-image: url(./migration/hawk1.png);}
+	13% {top: 12.5vw; left: 29vw;background-image: url(./migration/hawk1.png);}
+	25% {top: 28vw; left: 41vw;background-image: url(./migration/hawk1.png);}
+	37% {top: 35.5vw; left: 42vw;background-image: url(./migration/hawk1.png);}
+	37.01% {top: 35.5vw; left: 42vw;background-image: url(./migration/hawk.png);}
+	50% {top: 30vw; left: 47vw;background-image: url(./migration/hawk.png);}
+	62% {top: 15vw; left: 38vw;background-image: url(./migration/hawk.png);}
+	74% {top: 3vw; left: 36vw;background-image: url(./migration/hawk.png);}
+	87% {top: 2vw; left: 30vw;background-image: url(./migration/hawk.png);}
+	100% {top: 5.5vw; left: 23vw;background-image: url(./migration/hawk.png);}
+}
+
+#tern{
+	z-index: 2;
+	width: 6vw;
+	height:6vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: tern;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes tern {
+	0% {top: 25vw; left: 41vw;background-image: url(./migration/tern.png);}
+	20% {top: 5vw; left: 24vw;background-image: url(./migration/tern.png);}
+	20.01% {top: 5vw; left: 24vw;background-image: url(./migration/tern1.png);}
+	40% {top: 11vw; left: 25vw;background-image: url(./migration/tern1.png);}
+	60% {top: 21vw; left: 34vw;background-image: url(./migration/tern1.png);}
+	80% {top: 39vw; left: 40vw;background-image: url(./migration/tern1.png);}
+	80.01% {top: 39vw; left: 40vw;background-image: url(./migration/tern.png);}
+	100% {top: 25vw; left: 41vw;background-image: url(./migration/tern.png);}
+}
+
+#wheatear{
+	z-index: 2;
+	width: 6vw;
+	height:6vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: wheatear;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes wheatear {
+	0% {top: 2vw; left: 32.5vw;background-image: url(./migration/wheatear1.png);}
+	10% {top: 9vw; left: 45vw;background-image: url(./migration/wheatear1.png);}
+	10.01% {top: 9vw; left: 45vw;background-image: url(./migration/wheatear.png);}
+	20% {top: 7.5vw; left: 53vw;background-image: url(./migration/wheatear.png);}
+	20.01% {top: 7.5vw; left: 53vw;background-image: url(./migration/wheatear1.png);}
+	30% {top: 22vw; left: 53vw;background-image: url(./migration/wheatear1.png);}
+	40% {top: 32vw; left: 61.5vw;background-image: url(./migration/wheatear1.png);}
+	40.01% {top: 32vw; left: 61.5vw;background-image: url(./migration/wheatear2.png);}
+	50% {top: 21vw; left: 60vw;background-image: url(./migration/wheatear2.png);}
+	60% {top: 20vw; left: 55vw;background-image: url(./migration/wheatear2.png);}
+	60.01% {top: 20vw; left: 55vw;background-image: url(./migration/wheatear.png);}
+	70% {top: 11vw; left: 58vw;background-image: url(./migration/wheatear.png);}
+	80% {top: 3vw; left: 83.5vw;background-image: url(./migration/wheatear.png);}
+	80.01% {top: 3vw; left: 83.5vw;background-image: url(./migration/wheatear2.png);}
+	100% {top: 2vw; left: 32.5vw;background-image: url(./migration/wheatear2.png);}
+}
+
+#warbler{
+	z-index: 2;
+	width: 5vw;
+	height:5vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: warbler;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes warbler {
+	0% {top: 5vw; left: 82vw;background-image: url(./migration/warbler2.png);}
+	16% {top: 2.5vw; left: 66vw;background-image: url(./migration/warbler2.png);}
+	16.01% {top: 2.5vw; left: 66vw;background-image: url(./migration/warbler1.png);}
+	33% {top: 10vw; left: 63vw;background-image: url(./migration/warbler1.png);}
+	50% {top: 16.5vw; left: 55vw;background-image: url(./migration/warbler1.png);}
+	50.01% {top: 16.5vw; left: 55vw;background-image: url(./migration/warbler3.png);}
+	66% {top: 24vw; left: 60vw;background-image: url(./migration/warbler3.png);}
+	66.01% {top: 24vw; left: 60vw;background-image: url(./migration/warbler.png);}
+	83% {top: 19vw; left: 67vw;background-image: url(./migration/warbler.png);}
+	100% {top: 5vw; left: 82vw;background-image: url(./migration/warbler.png);}
+}
+
+#crane{
+	z-index: 2;
+	width: 7vw;
+	height:7vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: crane;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes crane{
+	0% {top: 13vw; left: 66vw;background-image: url(./migration/crane2.png);}
+	14% {top: 19vw; left: 59vw;background-image: url(./migration/crane2.png);}
+	14.01% {top: 19vw; left: 59vw;background-image: url(./migration/crane3.png);}
+	28% {top: 31vw; left: 63vw;background-image: url(./migration/crane3.png);}
+	28.01% {top: 31vw; left: 63vw;background-image: url(./migration/crane.png);}
+	42% {top: 29vw; left: 70vw;background-image: url(./migration/crane.png);}
+	57% {top: 21vw; left: 70vw;background-image: url(./migration/crane.png);}
+	71% {top: 3vw; left: 88vw;background-image: url(./migration/crane.png);}
+	71.01% {top: 3vw; left: 88vw;background-image: url(./migration/crane2.png);}
+	85% {top: 4vw; left: 75vw;background-image: url(./migration/crane2.png);}
+	100% {top: 13vw; left: 66vw;background-image: url(./migration/crane2.png);}
+}
+
+#goose{
+	z-index: 2;
+	width: 8vw;
+	height:5vw;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	animation-name: goose;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes goose{
+	0% {top: 4vw; left: 75vw;background-image: url(./migration/goose.png);}
+	33% {top: 23vw; left: 75vw;background-image: url(./migration/goose.png);}
+	33.01% {top: 23vw; left: 75vw;background-image: url(./migration/goose1.png);}
+	67% {top: 3vw; left: 91vw;background-image: url(./migration/goose1.png);}
+	67.01% {top: 3vw; left: 91vw;background-image: url(./migration/goose2.png);}
+	100% {top: 4vw; left: 75vw;background-image: url(./migration/goose2.png);}
+}
+
+#swallow{
+	z-index: 2;
+	width: 6vw;
+	height:6vw;
+	background-size: cover;
+	position: absolute;
+	animation-name: swallow;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes swallow{
+	0% {top: 2vw; left: 95vw;background-image: url(./migration/swallow.png);}
+	14% {top: 1.5vw; left: 84vw;background-image: url(./migration/swallow.png);}
+	14.01% {top: 1.5vw; left: 84vw;background-image: url(./migration/swallow3.png);}
+	28% {top: 16vw; left: 81vw;background-image: url(./migration/swallow3.png);}
+	42% {top: 35vw; left: 83vw;background-image: url(./migration/swallow3.png);}
+	57% {top: 36vw; left: 94vw;background-image: url(./migration/swallow3.png);}
+	57.01% {top: 36vw; left: 94vw;background-image: url(./migration/swallow.png);}
+	71% {top: 22vw; left: 89vw;background-image: url(./migration/swallow.png);}
+	71.01% {top: 22vw; left: 89vw;background-image: url(./migration/swallow2.png);}
+	85% {top: 12vw; left: 94vw;background-image: url(./migration/swallow2.png);}
+	85.01% {top: 12vw; left: 94vw;background-image: url(./migration/swallow.png);}
+	100% {top: 2vw; left: 95vw;background-image: url(./migration/swallow.png);}
+}
+
+.text{
+	width: 23vw;
+	position: absolute;
+	top: 3vw;
+	left: .5vw;
+	opacity: 0;
+	z-index: 0;
+}
+
+#directions{
+	width: 23vw;
+	position: absolute;
+	top: 3vw;
+	left: .5vw;
+	opacity: 1;
+}
+
+#click{
+	z-index: 1;
+	width: 98.75vw;
+	height:47.75vw;
+}
+
+</style>
+
+</head>
+<body>
+
+<a href="birds.html">
+<div id="menubar"> Back</div>
+</a>
+<div id="map"></div>
+<div id="click"> </div>
+<div id="directions"> 
+<h2>Overview and Instructions</h2>
+<p>Click on a bird to learn more about the flyway it's on, as well as information about that species. Click anywhere except a bird to see these instructions. </p>
+<p>This map highlights the eight major bird migration flyways of the world. A flyway is a route regularly used by large numbers of migrating birds (Oxford Languages). Each bird moving around the map represents one species that travels on that flyway.
+</p> 
+<p>Pacific Americas Flyway = Arctic Tern (Green)</p>
+<p>Mississippi Americas Flyway = Swainson's Hawk (Pink)</p>
+<p>Atlantic Americas Flyway = Red Knot (Black)</p>
+<p>East Atlantic Flyway = Greenland/Scandinavian Wheatear (Green)</p>
+<p>Black Sea/Mediterranean Flyway = Spectacled Warbler (Dark Blue)</p>
+<p>East Africa-West Asia Flyway = Siberian Crane (Pink)</p>
+<p>Central Asian Flyway = Bar-Headed Goose (Black)</p>
+<p>East Asia-Australian Flyway = Fork-Tailed Swift (Light Blue)</p>
+</div>
+
+<div id="knot"></div>
+<div class="text" id="knottext">
+<h2>The Atlantic American Flyway</h2>
+<p>The Atlantic Americas Flyway connects the Canadian Arctic Archipelago to South America’s southern tip, Tierra del Fuego. Numerous arctic breeding birds move south along the flyway for the northern winter. </p>
+<p>The Atlantic American Flyway hosts over 250 bird species and serves as an important resting and feeding site for migrating and wintering waterfowl, including more than 35,000 Canada geese and 15,000 ducks using the Atlantic Flyway during the fall migration. Some species, such as the Red Knot (Calidris canutus), travel the flyway’s full length twice each year - an incredible round trip of 30,000km. While migrating south, Red Knots gather in huge numbers at the Delaware Bay, an established stoppover point. Nearly 90% of the entire population of the Red Knot subspecies 'rufa' can be present on the bay in a single day.</p>
+<p>Sources: http://datazone.birdlife.org/userfiles/file/sowb/ flyways/3_Atlantic_Americas_Factsheet.pdf and https://www.allaboutbirds.org/guide/Red_Knot/ overview</p>
+</div>
+
+<div id="hawk"></div>
+<div class="text" id="hawktext">
+<h2>The Mississippi American Flyway</h2>
+<p>The Central Americas Flyway extends over 14,000km from the Canadian Arctic to the southern tip of Argentina. From its northern limit, the flyway stretches south through the North American Interior Plains and the Mississippi Valley to the marshes and prairies of the Gulf Coast. In South America, the flyway broadens into the Amazon Basin and then continues south through the Gran Chaco and Pampas before terminating in Patagonia.</p>
+<p>According to Bird Life International, almost 400 bird species travel the Central American Flyway each year. One of these birds is the rare Swainson's Hawk, an elegant gray, white, and brown hawk, which has one of the longest migrations of any American raptor. </p>
+<p>Sources: http://datazone.birdlife.org/userfiles/file/ sowb/flyways/2_Central_Americas_Factsheet.pdf and https://www.allaboutbirds.org/guide/ Swainsons_Hawk/overview</p>
+</div>
+
+<div id="tern"></div>
+<div class="text" id="terntext">
+<h2> The Pacific American Flyway</h2>
+<p>The Pacific Americas Flyway stretches from the permafrost tundra of the high arctic, south along the Pacific seaboard to Tierra del Fuego, the southernmost tip of the South American mainland. Many of the millions of migratory waterbirds that nest on Alaska’s expansive tundra embark on remarkable southern journeys along this flyway. Bordered by the Rocky Mountains to the east, the flyway continues down through the USA to Mexico and Central America. </p>
+<p>At least 1 billion birds migrate along the Pacific American flyway each year. This includes the Arctic Tern, which travels from its Arctic breeding grounds to Antarctica where it enjoys the Antarctic summer, covering around 25,000 miles.</p>
+<p> Sources: http://datazone.birdlife.org/userfiles/file/ sowb/flyways/1_Pacific_Americas_Factsheet.pdf and https://www.allaboutbirds.org/guide/ Arctic_Tern/overview</p></div>
+
+<div id="wheatear"></div>
+<div class="text" id="wheateartext">
+<h2>The East Atlantic Flyway</h2>
+<p>The East Atlantic flyway links a discontinuous band of arctic breeding grounds that stretch from Canada east to central Siberia with wintering grounds in Western Europe and West Africa. Each autumn, huge numbers of arctic migrants, especially waterbirds, converge on western Europe from their breeding grounds far north, to head south for the winter. </p>
+<p>The East Atlantic Flyway is a migration route used by about 90 million birds annually. Most species of birds usually come from either the Western Hemisphere or the Eastern Hemisphere, but some species have one subspecies that has evolved to go east and separate one that goes west. One such species is the Wheatear. There is a "Greenland" Wheatear, which flies west, and it's counterpart, a "Scandinavian" Wheatear, which flies east. </p>
+<p>Source: http://datazone.birdlife.org/userfiles/file/ sowb/flyways/4_East_Atlantic_Factsheet.pdf</p></div>
+
+<div id="warbler"></div>
+<div class="text" id="warblertext">
+<h2>The Black Sea/Mediterranean Flyway</h2>
+<p>The Black Sea/Mediterranean Flyway is one of three Palaearctic-African flyways connecting Europe with Africa. Collectively, these constitute the world’s largest bird migration system. The scale of the avian movement is truly incredible with over 2 billion passerines and near-passerines, 2.5 million ducks and two million raptors migrating from their breeding grounds in Europe and central and western Asia to winter in tropical Africa.</p>
+<p>Old World warblers, like the Spectacled Warbler, mostly breed in Europe and Asia and migrate to Africa or tropical Asia for the winter. There are over 250 Old World warblers, most of which migrate on this flyway or the East Africa West Asia flyway. </p>
+<p>Sources: http://datazone.birdlife.org/userfiles/file/sowb/ flyways/5_Mediterranean_Black_Sea_Factsheet.pdf and https://www.beautyofbirds.com/ warblersoldworld.html</p></div>
+
+<div id="goose"></div>
+<div class="text" id="goosetext">
+<h2>The Central Asian Flyway</h2>
+<p>The Central Asian Flyway is the shortest flyway in the world. Lying entirely within the Northern Hemisphere, it connects a large swathe of the Palaearctic with the Indian subcontinent. Separating the subcontinent from the Tibetan Plateau to the north are the Himalayas, which rise to over 8km and stretch 200km from north to south, and are a formidable barrier.</p>
+<p>The Central Asia Flyway covers 182 species of birds, and around 280  populations which includes 29 globally threatened species which breed, migrate and winter within the region. Many of migratory birds choose to avoid the Himalayas and instead fly along the East Africa-West Asia Flyway to Africa for the winter. However, a few birds, such as the Bar-headed Goose (Anser indicus), follow a route directly over the Himalayan range, rather than going around it. The Bar-Headed Gose is the world's highest-altitude migrant, capable of clearing even Mount Everest. </p>
+<p>Sources: http://datazone.birdlife.org/userfiles/file/sowb/ flyways/7_Central_Asia_Factsheet.pdf and https://www.dookinternational.com/blog/central-asia-flyway/</p></div>
+
+<div id="crane"></div>
+<div class="text" id="cranetext">
+<h2>The East Africa-West Asia Flyway</h2>
+<p>Many birds that breed in the mid-Palaearctic choose to embark on a much longer south-westerly migration to Africa rather than spend the northern winter directly to the south. By travelling westwards along the East Africa/West Asia Flyway, migrating birds avoid the Tibetan plateau and Himalayas, which are too high for most species to fly over, and instead go west to Africa. </p>
+<p>Over 330 species use this flyway, and seven sites along the route have over a million birds. The Siberian Crane, which travels along this flyway, has one of the longest migrations of any crane species. Unfortunately, it is Critically Endangered and as of 2010, the world population was estimated to be at about 3,200 birds total. </p>
+<p>Source: http://datazone.birdlife.org/userfiles/file/sowb/ flyways/6_East_Asia_East_Africa_Factsheet.pdf and https://en.wikipedia.org/wiki/ Asian%E2%80%93East_African_Flyway</p></div>
+
+<div id="swallow"></div>
+<div class="text" id="swallowtext">
+<h2>The East Asia-Australian Flyway</h2>
+<p>The East Asia/Australasia Flyway extends from Arctic Russia and North America to the southern limits of Australia and New Zealand. The scale of avian movement along the flyway is incredible, with over 50 million migratory waterbirds, including 8 million waders, using the route annually. </p>
+<p>Very few bird species travel all the way from the Northern Hemisphere to Australia. Only ten species do so regularly, including the Yellow Wagtail, Fork-tailed Swift, and Oriental Cuckoo, and most are rare or occupy only the northern fringes of the region. </p>
+<p>Sources: http://datazone.birdlife.org/userfiles/file/sowb/ flyways/8_East_Asia_Australasia_Factsheet.pdf and https://en.wikipedia.org/wiki/ East_Asian%E2%80%93Australasian_Flyway</p></div>
+
+
+
+<script type="text/javascript">
+
+	var knot = document.getElementById('knot');
+	var hawk = document.getElementById('hawk');
+	var tern = document.getElementById('tern');
+	var wheatear = document.getElementById('wheatear');
+	var warbler = document.getElementById('warbler');
+	var swallow = document.getElementById('swallow');
+	var goose = document.getElementById('goose');
+	var crane = document.getElementById('crane');
+
+	function hawkInfo (){
+		hawktext.style.opacity = "1";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "0";
+		warblertext.style.opacity = "0";
+		swallowtext.style.opacity = "0";
+		goosetext.style.opacity = "0";
+		cranetext.style.opacity = "0";
+		directions.style.opacity = "0";
+		console.log("eh?");
+	}
+	hawk.addEventListener("click", hawkInfo)
+
+	function knotInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "1";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "0";
+		warblertext.style.opacity = "0";
+		swallowtext.style.opacity = "0";
+		goosetext.style.opacity = "0";
+		cranetext.style.opacity = "0";
+		directions.style.opacity = "0";
+		console.log("ah?");
+	}
+	knot.addEventListener("click", knotInfo)
+	
+	function ternInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "1";
+		wheateartext.style.opacity = "0";
+		warblertext.style.opacity = "0";
+		swallowtext.style.opacity = "0";
+		goosetext.style.opacity = "0";
+		cranetext.style.opacity = "0";
+		directions.style.opacity = "0";
+		console.log("oh?");
+	}
+	tern.addEventListener("click", ternInfo)
+
+	function wheatearInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "1";
+		warblertext.style.opacity = "0";
+		swallowtext.style.opacity = "0";
+		goosetext.style.opacity = "0";
+		cranetext.style.opacity = "0";
+		directions.style.opacity = "0";
+		console.log("uh?");
+	}
+	wheatear.addEventListener("click", wheatearInfo)
+
+	function warblerInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "0";
+		warblertext.style.opacity = "1";
+		swallowtext.style.opacity = "0";
+		goosetext.style.opacity = "0";
+		cranetext.style.opacity = "0";
+		directions.style.opacity = "0";
+		console.log("aah?");
+	}
+	warbler.addEventListener("click", warblerInfo)
+
+	function swallowInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "0";
+		warblertext.style.opacity = "0";
+		swallowtext.style.opacity = "1";
+		goosetext.style.opacity = "0";
+		cranetext.style.opacity = "0";
+		directions.style.opacity = "0";
+		console.log("eeh?");
+	}
+	swallow.addEventListener("click", swallowInfo)
+
+	function gooseInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "0";
+		warblertext.style.opacity = "0";
+		swallowtext.style.opacity = "0";
+		goosetext.style.opacity = "1";
+		cranetext.style.opacity = "0";
+		directions.style.opacity = "0";
+		console.log("ooh?");
+	}
+	goose.addEventListener("click", gooseInfo)
+
+	function craneInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "0";
+		warblertext.style.opacity = "0";
+		swallowtext.style.opacity = "0";
+		goosetext.style.opacity = "0";
+		cranetext.style.opacity = "1";
+		directions.style.opacity = "0";
+		console.log("uuh?");
+	}
+	crane.addEventListener("click", craneInfo)
+
+	function clickInfo (){
+		hawktext.style.opacity = "0";
+		knottext.style.opacity = "0";
+		terntext.style.opacity = "0";
+		wheateartext.style.opacity = "0";
+		warblertext.style.opacity = "0";
+		swallowtext.style.opacity = "0";
+		goosetext.style.opacity = "0";
+		cranetext.style.opacity = "0";
+		directions.style.opacity = "1";
+		console.log("yh?");
+	}
+	click.addEventListener("click", clickInfo)
+
+</script>
+
+</body>
+</html>
