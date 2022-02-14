@@ -18,7 +18,7 @@ Notes for updating Projects:
 	position: absolute;
 	top: .5vw;
 	left: 44vw;
-	font-size: 3.75vw;
+	font-size: 3vw;
 	color: black;
 	text-align: center;
 	text-decoration: underline;
@@ -31,7 +31,7 @@ body{
 #migration{
 	width: 28vw;
 	height: 14vw;
-	background-image: url(migration.png);
+	background-image: url(./birdportfolio/migration.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -41,7 +41,7 @@ body{
 #portfolio{
 	width: 28vw;
 	height: 14vw;
-	background-image: url(portfolio.png);
+	background-image: url(./birdportfolio/portfolio.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -49,25 +49,24 @@ body{
 	top: 7vw;
 	left: 69.5vw;
 }
-
-#birdguesser{
-	width: 28vw;
-	height: 14vw;
-	background-image: url(birdguesser.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 25vw;
-	left: 69.5vw;
-}
 #birdgenerator{
 	width: 28vw;
 	height: 14vw;
-	background-image: url(./generator/6.png);
+	background-image: url(./birds/6.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 25vw;
+	top: 27vw;
+	left: 2vw;
+}
+#birdguesser{
+	width: 28vw;
+	height: 14vw;
+	background-image: url(./birdportfolio/guess.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 27vw;
 	left: 36vw;
 }
 
@@ -89,7 +88,17 @@ body{
 	position: absolute;
 	top: 57vw;
 }
-
+#info{
+	z-index: 2;
+	width: 28vw;
+	height: 16vw;
+/*	background-color: lightskyblue;*/
+	position: absolute;
+	top: 7vw;
+	left: 2vw;
+	font-size: 1.15vw;
+	font-family: "Times New Roman";
+}
 
 </style>
 
@@ -100,25 +109,32 @@ body{
 <div id="text">
 	
 </div>
-<a href="generator.html"> <div class="title" id="birdgenerator">
-	<div class="text"> Random Bird Generator</div></div></a>
+<a href="generator.html">
+	<div class="title" id="birdgenerator">
+	<div class="text"> Random Bird Generator</div>
+</div></a>
 <a href="migration.html"><div class="title" id="migration">
 	<div class="text"> Migration Map</div></div></a>
-<a href="birdportfolio.html"><div class="title" id="portfolio">
+<a href="portfolio.html"><div class="title" id="portfolio">
 	<div class="text"> Bird Photos Portfolio</div></div></a>
 <a href="guess.html"><div class="title" id="birdguesser">
 	<div class="text"> Bird ID Game</div></div></a>
 
+<div id="info">
+Hi! My name is Ellie Heller.
+Ever since I saw a Mallard in Harlem Meer, Central Park at age 3, I've been obsessed with birds. As I grew older, my interest broadened from ducks to the songbirds I saw at a bird feeder I put up, to all birds in general. Over quarantine, I learned how to take photos of birds with a Sony camera, and have enjoyed trying to get fun photos of birds.  
+<p>I coded this website for a computer science class, and have been able to make many bird projects exploring my passion for birds. All the pictures of birds on this website are photos I've taken. I hope you enjoy my website!</p>
+</div>
 
 <script type="text/javascript">
 	
 let birdgenerator = document.getElementById('birdgenerator');
 
 function bird() {
-var number = Math.floor(Math.random()*16);
+var number = Math.floor(Math.random()*4);
 console.log(number + ".png")
 
-birdgenerator.style.backgroundImage = "url(./birds/" + number + ".png)"
+birdgenerator.style.backgroundImage = "url(./birdportfolio/" + number + ".png)"
 }
 
 bird()
