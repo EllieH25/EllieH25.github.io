@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>We Miss You Marcus!</title>
+
+	<style type="text/css">
+body{
+	background-color: #cce7ff;
+}
+
+#photo{
+	width: 20vw;
+	height: 27vw;
+	background-image: url(./marcus/0.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 12vw;
+	left: 40vw;
+		}
+
+#wemissyou{
+	width: 50vw;
+	height: 5vw;
+/*	background-color: lightblue;*/
+	font-size: 5vw;
+	text-align: center;
+	position: absolute;
+	left: 25vw;
+	top: 2vw;
+}
+#click{
+	width: 20vw;
+	height: 2vw;
+	position: absolute;
+	top: 9vw;
+	left: 40vw;
+	text-align: center;
+	font-size: 1vw;
+}
+#button{
+	width: 10vw;
+	height: 2.5vw;
+	background-color: lightblue;
+	text-align: center;
+	position: absolute;
+	top: 1vw;
+	left: 1vw;
+	font-size: 1vw;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.text3{
+	width: 8vw;
+	height: 8vw;
+	position: relative;
+	top: 33%;
+	left: 1vw;
+	color: black;
+	text-align: center;
+	font-size: .9vw;
+	text-align: center;
+}
+.text2{
+	width: 8vw;
+	height: 8vw;
+	position: relative;
+	top: 38%;
+	left: 1vw;
+	color: black;
+	text-align: center;
+	font-size: .9vw;
+	text-align: center;
+}
+.text5{
+	width: 8vw;
+	height: 8vw;
+	position: relative;
+	top: 23%;
+	left: 1vw;
+	color: black;
+	text-align: center;
+	font-size: .9vw;
+	text-align: center;
+}
+.circle{
+	width: 10vw;
+	height: 10vw;
+	position: absolute;
+	background-color: lightblue;
+	border-radius: 50%;
+	opacity: 0;
+}
+#quote1{
+	left: 3vw;
+	top: 20vw;
+}
+#quote2{
+	left: 15vw;
+	top: 8vw;
+}
+#quote3{
+	left: 15vw;
+	top: 32vw;
+}
+#quote4{
+	left: 27vw;
+	top: 20vw;
+}
+#quote5{
+	left: 63vw;
+	top: 20vw;
+}
+#quote6{
+	left: 75vw;
+	top: 8vw;
+}
+#quote7{
+	left: 75vw;
+	top: 32vw;
+}
+#quote8{
+	left: 87vw;
+	top: 20vw;
+}
+#endquote{
+	width:60vw;
+	height: 2vw;
+	position: absolute;
+	top: 42vw;
+	left: 20vw;
+	text-align: center;
+	font-size: 1.1vw;
+}
+
+
+	</style>
+</head>
+<body>
+
+<div id="photo"></div>
+<div id="wemissyou">We Miss You Marcus!</div>
+<div class="circle" id="quote1"><div class="text2">
+WE MISS YOU AND LOVE YOU!!! -Fran</div></div>
+<div class="circle" id="quote2"><div class="text2">
+We can't wait to see you again! -Maxwell</div></div>
+<div class="circle" id="quote3"><div class="text2">
+Hey Marcus! We miss you! <3 -Madeleine</div></div>
+<div class="circle" id="quote4"><div class="text3">
+We miss your thoughtful comments in history! -Easha</div></div>
+<div class="circle" id="quote5"><div class="text3">
+Marcus, I miss your unequivocal joy! Lol... -Tessa</div></div>
+<div class="circle" id="quote6"><div class="text3">
+Marcus, we still have to style your hair emo. -Zafi</div></div>
+<div class="circle" id="quote7"><div class="text2">
+Pippin tech forever! We miss you!! -Cate</div></div>
+<div class="circle" id="quote8"><div class="text5">
+You make our English class more fun with your contributions!! Miss you! -Daphne</div></div>
+<div id="endquote">We all miss you and have been thinking about you! No class is the same without you. Can't wait to see you! -Ellie</div>
+<div id="click">(click the screen!)</div>
+<div id="button">Click here to see all the quotes!</div>
+
+<script type="text/javascript">
+var counter = 0
+var button = document.getElementById('button');
+
+function clickCount (){
+		counter = counter +1
+
+function bird() {
+console.log(counter)
+
+if (counter == 1) {
+quote1.style.opacity = "1"
+quote2.style.opacity = "0"
+quote3.style.opacity = "0"
+quote4.style.opacity = "0"
+quote5.style.opacity = "0"
+quote6.style.opacity = "0"
+quote7.style.opacity = "0"
+quote8.style.opacity = "0"
+};
+if (counter == 2) {
+quote1.style.opacity = "0"
+quote2.style.opacity = "1"
+quote3.style.opacity = "0"
+quote4.style.opacity = "0"
+quote5.style.opacity = "0"
+quote6.style.opacity = "0"
+quote7.style.opacity = "0"
+quote8.style.opacity = "0"};
+if (counter == 3) {
+quote1.style.opacity = "0"
+quote2.style.opacity = "0"
+quote3.style.opacity = "1"
+quote4.style.opacity = "0"
+quote5.style.opacity = "0"
+quote6.style.opacity = "0"
+quote7.style.opacity = "0"
+quote8.style.opacity = "0"};
+if (counter == 4) {
+quote1.style.opacity = "0"
+quote2.style.opacity = "0"
+quote3.style.opacity = "0"
+quote4.style.opacity = "1"
+quote5.style.opacity = "0"
+quote6.style.opacity = "0"
+quote7.style.opacity = "0"
+quote8.style.opacity = "0"};
+if (counter == 5) {
+quote1.style.opacity = "0"
+quote2.style.opacity = "0"
+quote3.style.opacity = "0"
+quote4.style.opacity = "0"
+quote5.style.opacity = "1"
+quote6.style.opacity = "0"
+quote7.style.opacity = "0"
+quote8.style.opacity = "0"};
+if (counter == 6) {
+quote1.style.opacity = "0"
+quote2.style.opacity = "0"
+quote3.style.opacity = "0"
+quote4.style.opacity = "0"
+quote5.style.opacity = "0"
+quote6.style.opacity = "1"
+quote7.style.opacity = "0"
+quote8.style.opacity = "0"};
+if (counter == 7) {
+quote1.style.opacity = "0"
+quote2.style.opacity = "0"
+quote3.style.opacity = "0"
+quote4.style.opacity = "0"
+quote5.style.opacity = "0"
+quote6.style.opacity = "0"
+quote7.style.opacity = "1"
+quote8.style.opacity = "0"};
+if (counter == 8) {
+quote1.style.opacity = "0"
+quote2.style.opacity = "0"
+quote3.style.opacity = "0"
+quote4.style.opacity = "0"
+quote5.style.opacity = "0"
+quote6.style.opacity = "0"
+quote7.style.opacity = "0"
+quote8.style.opacity = "1"};
+if (counter == 9) {
+quote1.style.opacity = "1"
+quote2.style.opacity = "1"
+quote3.style.opacity = "1"
+quote4.style.opacity = "1"
+quote5.style.opacity = "1"
+quote6.style.opacity = "1"
+quote7.style.opacity = "1"
+quote8.style.opacity = "1"};
+if (counter == 10) {
+quote1.style.opacity = "0"
+quote2.style.opacity = "0"
+quote3.style.opacity = "0"
+quote4.style.opacity = "0"
+quote5.style.opacity = "0"
+quote6.style.opacity = "0"
+quote7.style.opacity = "0"
+quote8.style.opacity = "0"};
+if (counter > 9) {counter = 0};
+
+}
+
+bird()
+}
+
+document.addEventListener("click", clickCount)
+
+var button = document.getElementById('button');
+
+function buttonClick (){
+counter = 8
+		console.log("eh?");
+	}
+	button.addEventListener("click", buttonClick)
+
+</script>
+
+</body>
+</html>
