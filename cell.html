@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+body{
+	background-color: #cce7ff;
+}
+#menubar{
+	z-index: 2;
+	width: 6vw;
+	height: 2.5vw;
+	background-color: lightskyblue;
+	position: absolute;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+#ribosome{
+	width: 60vw;
+	height: 40vw;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 5vw;
+	left: 5vw;
+	animation-name: ribosome;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes ribosome{
+	0% {background-image: url(./bio/ribosome1.png);}
+	20% {background-image: url(./bio/ribosome2.png);}
+	40% {background-image: url(./bio/ribosome3.png);}
+	60% {background-image: url(./bio/ribosome4.png);}
+	80% {background-image: url(./bio/ribosome5.png);}
+	100% {background-image: url(./bio/ribosome1.png);}
+}
+#nextpage{
+	width: 10vw;
+	height: 2.5vw;
+	background-color: lightblue;
+	font-size: 1vw;
+	text-align: center;
+	color: black;
+	position: absolute;
+	left: 87vw;
+	top: 43vw;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#right{
+	width: 8vw;
+	height: 3vw;
+	background-image: url(./bio/right.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 15vw;
+	left: 45vw;
+}
+#chain{
+	width: 10vw;
+	height: 7vw;
+	background-image: url(./bio/chain.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 13vw;
+	left: 54vw;
+}
+#right2{
+	width: 8vw;
+	height: 3vw;
+	background-image: url(./bio/right.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 15vw;
+	left: 65vw;
+}
+
+	</style>
+</head>
+<body>
+<a href="vaccine.html">
+<div id="menubar">Back</div>
+</a>
+<div id="ribosome"></div>
+<div id="right"></div>
+<div id="chain"></div>
+<div id="right2"></div>
+<a href="protein.html"><div id="nextpage">Click here to go to the next page</div></a>
+</body>
+</html>
