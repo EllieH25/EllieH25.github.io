@@ -18,6 +18,215 @@ body{
 	color: white;
 	text-align: center;
 }
+#spikecell{
+	width: 20vw;
+	height: 20vw;
+	background-image: url(./bio/spikecell.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 15vw;
+	left: 40vw;
+}
+#wbc{
+	width: 17vw;
+	height: 17vw;
+	background-image: url(./bio/wbc.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 8vw;
+	left: 20vw;
+	animation-name: wbc;
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes wbc{
+	0% {opacity: 0; top: 5vw; left: 10vw;}
+	5% {opacity: 1;top: 8vw; left: 20vw;}
+	100% {opacity: 1;top: 8vw; left: 20vw;}
+}
+
+#alert{
+	width: 3vw;
+	height: 3vw;
+	background-image: url(./bio/alert.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 7vw;
+	left: 20vw;
+	animation-name: alert;
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes alert{
+	0% {opacity: 0}
+	5.9% {opacity: 0}
+	6% {opacity: 1}
+	10.9% {opacity: 1}
+	11% {opacity: 0}
+	100% {opacity: 0}
+}
+.antibody{
+	width: 4vw;
+	height: 4vw;
+	background-image: url(./bio/antibody.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 20vw;
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+#antibody1{	
+	left: 22vw;
+	animation-name: aone;
+	transform: rotate(40deg);
+}
+@keyframes aone{
+	0%{top: 15vw; opacity: 0;}
+	12% {top: 15vw; opacity: 0;}
+	14% {top: 20vw; opacity: 1;}
+	28% {top: 20vw; left: 22vw; opacity: 1;transform: rotate(40deg);}
+	40% {top:19vw; left:41vw; transform: rotate(-2deg);}
+	100% {top:19vw; left:41vw; transform: rotate(-2deg);}
+}
+#antibody2{
+	left: 26vw;
+	transform: rotate(15deg);
+	animation-name: atwo;
+}
+@keyframes atwo{
+	0%{top: 15vw; opacity: 0;}
+	14% {top: 15vw; opacity: 0;}
+	16% {top: 20vw; opacity: 1;}
+	28% {top: 20vw; left: 26vw; opacity: 1;transform: rotate(40deg);}
+	40% {top: 24vw; left: 39vw; transform: rotate(-35deg);}
+	100% {top: 24vw; left: 39vw; transform: rotate(-35deg);}
+}
+#antibody3{	
+	left: 30vw;
+	transform: rotate(30deg);
+	animation-name: athree;
+}
+@keyframes athree{
+	0%{top: 15vw; opacity: 0;}
+	16% {top: 15vw; opacity: 0;}
+	18% {top: 20vw; opacity: 1;}
+	28% {top: 20vw; left: 30vw; opacity: 1;transform: rotate(40deg);}
+	40% {top: 28.5vw; left: 40.5vw; transform: rotate(-85deg);}
+	100% {top: 28.5vw; left: 40.5vw; transform: rotate(-85deg);}
+}
+#antibody4{	
+	left: 20vw;
+	animation-name: afour;
+	transform: rotate(30deg);
+}
+@keyframes afour{
+	0%{top: 15vw; opacity: 0;}
+	18% {top: 15vw; opacity: 0;}
+	20% {top: 20vw; opacity: 1;}
+	28% {top: 20vw; left: 20vw; opacity: 1;transform: rotate(40deg);}
+	40% {top: 31vw; left: 45.5vw; transform: rotate(-130deg);}
+	100% {top: 31vw; left: 45.5vw; transform: rotate(-130deg);}
+}
+#antibody5{
+	left: 24vw;
+	transform: rotate(37deg);
+	animation-name: afive;
+}
+@keyframes afive{
+	0%{top: 15vw; opacity: 0;}
+	20% {top: 15vw; opacity: 0;}
+	22% {top: 20vw; opacity: 1;}
+	28% {top: 20vw; left: 24vw; opacity: 1;transform: rotate(40deg);}
+	40% {top: 29vw; left: 51vw; transform: rotate(-185deg);}
+	100% {top: 29vw; left: 51vw; transform: rotate(-185deg);}
+}
+#antibody6{	
+	left: 32vw;
+	transform: rotate(50deg);
+	animation-name: asix;
+}
+@keyframes asix{
+	0%{top: 15vw; opacity: 0;}
+	22% {top: 15vw; opacity: 0;}
+	24% {top: 20vw; opacity: 1;}
+	28% {top: 20vw; left: 32vw; opacity: 1;transform: rotate(40deg);}
+	40% {top: 24vw; left: 53vw; transform: rotate(130deg);}
+	100% {top: 24vw; left: 53vw; transform: rotate(130deg);}
+}
+#antibody7{	
+	left: 28vw;
+	transform: rotate(20deg);
+	animation-name: aseven;
+}
+@keyframes aseven{
+	0%{top: 15vw; opacity: 0;}
+	24% {top: 15vw; opacity: 0;}
+	26% {top: 20vw; opacity: 1;}
+	28% {top: 20vw; left: 28vw; opacity: 1;transform: rotate(40deg);}
+	40% {top: 19vw; left: 51vw; transform: rotate(90deg);}
+	100% {top: 19vw; left: 51vw; transform: rotate(90deg);}
+}
+#antibody8{	
+	left: 34vw;
+	transform: rotate(40deg);
+	animation-name: aeight;
+}
+@keyframes aeight{
+	0%{top: 15vw; opacity: 0;}
+	26% {top: 15vw; opacity: 0;}
+	28% {top: 20vw; opacity: 1;}
+	28% {top: 20vw; left: 34vw; opacity: 1;transform: rotate(40deg);}
+	40% {top: 17vw; left: 45.8vw; transform: rotate(48deg);}
+	100% {top: 17vw; left: 45.8vw; transform: rotate(48deg);}
+}
+#antibody{
+	width: 8vw;
+	height: 6vw;
+	font-size: 1vw;
+	position: absolute;
+	top: 20vw;
+	left: 12vw; 
+	background-image: url(./bio/antibodyarrow.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	animation-name: antibody;
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes antibody{
+	0% {opacity: 0;}
+	11% {opacity: 0}
+	12% {opacity: 1;}
+}
+#spikepoint{
+	width: 8vw;
+	height: 6vw;
+	font-size: 1vw;
+	position: absolute;
+	top: 16vw;
+	left: 48vw; 
+	background-image: url(./bio/spikepoint.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	animation-name: spikepoint;
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes spikepoint{
+	0% {opacity: 1;}
+	30% {opacity: 1;}
+	31% {opacity: 0;}
+	100% {opacity: 0;}
+}
 
 	</style>
 </head>
@@ -25,5 +234,19 @@ body{
 <a href="cell.html">
 <div id="menubar">Back</div>
 </a>
+<div id="spikecell"></div>
+<div id="wbc"></div>
+<div id="alert"></div>
+<div class="antibody" id="antibody1"></div>
+<div class="antibody" id="antibody2"></div>
+<div class="antibody" id="antibody3"></div>
+<div class="antibody" id="antibody4"></div>
+<div class="antibody" id="antibody5"></div>
+<div class="antibody" id="antibody6"></div>
+<div class="antibody" id="antibody7"></div>
+<div class="antibody" id="antibody8"></div>
+<div id="antibody"></div>
+<div id="spikepoint"></div>
+
 </body>
 </html>
