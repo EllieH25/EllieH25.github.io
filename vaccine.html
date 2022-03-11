@@ -40,7 +40,7 @@ body{
 	left: 44vw;
 	top: 20vw;
 	animation-name: tolipid;
-	animation-duration: 10s;
+	animation-duration: 20s;
 	animation-iteration-count: infinite;
 	font-size: 1vw;
 }
@@ -88,7 +88,7 @@ body{
 	top: 15vw;
 	left: 55vw;
 	animation-name: lipid;
-	animation-duration: 10s;
+	animation-duration: 20s;
 	animation-iteration-count: infinite;
 	font-size: 1vw;
 }
@@ -107,7 +107,7 @@ body{
 	left: 40vw;
 	top: 30vw;
 	animation-name: tocell;
-	animation-duration: 10s;
+	animation-duration: 20s;
 	animation-iteration-count: infinite;
 	font-size: 1vw;
 }
@@ -147,7 +147,19 @@ body{
 	background-image: url(./bio/mrna3.png);
 	background-size: cover;
 	background-position: center;
+	animation-name: ione;
+	animation-duration: 75s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
+@keyframes ione{
+	0% {background-color: lightblue}
+	13% {background-color: lightblue}
+	14% {background-color: #33d6ff}
+	15% {background-color: lightblue}
+	100% {background-color: lightblue}
+}
+
 #i2{
 	left: 1vw;
 	top: 27vw;
@@ -204,7 +216,43 @@ body{
 	top: 43vw;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+#button{
+	width: 4vw;
+	height: 2.5vw;
+	background-color: #33d6ff;
+	font-size: 1vw;
+	text-align: center;
+	color: black;
+	position: absolute;
+	left: 46vw;
+	top: 6vw;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#button1{
+	width: 4vw;
+	height: 2.5vw;
+	background-color: #33d6ff;
+	font-size: 1vw;
+	text-align: center;
+	color: black;
+	position: absolute;
+	left: 50vw;
+	top: 6vw;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#recording{
+	width: 8vw;
+	height: 2.5vw;
+	background-color: lightblue;
+	font-size: 1vw;
+	text-align: center;
+	color: black;
+	position: absolute;
+	left: 46vw;
+	top: 6vw;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	z-index: -1;
+}
 	</style>
 </head>
 <body>
@@ -226,8 +274,29 @@ body{
 <div id="cell"> 3.</div>
 <div id="scale">Note: this model is not to scale</div>
 <div id="syringe"></div>
+<div id="button">Play audio.</div>
+<div id="button1">Pause audio.</div>
+<audio id ="recording" src="./bio/biopage1.m4a" controls></audio>
 <div id="si"> <-- Vaccine injected into body</div>
 <a href="cell.html"><div id="nextpage">Click here to go to the next page</div></a>
+
+<script type="text/javascript">
+
+var button = document.getElementById("button");
+var recording = document.getElementById("recording");
+var button1 = document.getElementById("button1");
+var i1 = document.getElementById("i1");
+
+
+button.addEventListener("click", function(){
+	recording.play()
+})
+
+button1.addEventListener("click", function(){
+	recording.pause()
+})
+
+</script>
 
 </body>
 </html>

@@ -324,8 +324,8 @@ animation-name: wbcc;
 	0%{opacity: 0;}
 	69% {opacity: 0;}
 	70% {opacity: 1;}
-	80% {opacity: 1}
-	81% {opacity: 0}
+	90% {opacity: 1}
+	91% {opacity: 0}
 	100% {opacity: 0}
 }
 
@@ -340,6 +340,43 @@ animation-name: wbcc;
 	left: 87vw;
 	top: 43vw;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#button{
+	width: 4vw;
+	height: 2.5vw;
+	background-color: #33d6ff;
+	font-size: 1vw;
+	text-align: center;
+	color: black;
+	position: absolute;
+	left: 46vw;
+	top: 6vw;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#button1{
+	width: 4vw;
+	height: 2.5vw;
+	background-color: #33d6ff;
+	font-size: 1vw;
+	text-align: center;
+	color: black;
+	position: absolute;
+	left: 50vw;
+	top: 6vw;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#recording{
+	width: 8vw;
+	height: 2.5vw;
+	background-color: lightblue;
+	font-size: 1vw;
+	text-align: center;
+	color: black;
+	position: absolute;
+	left: 46vw;
+	top: 6vw;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	z-index: -1;
 }
 	</style>
 </head>
@@ -362,7 +399,25 @@ animation-name: wbcc;
 <div class="wbc" id="wbc2"></div>
 <div class="wbc" id="wbc3"></div>
 <div id="byebye">The "infected" cells are consumed by white blood cells, the antigens are killed. The body is now prepared to fight if it gets infected by COVID. </div>
+<div id="button">Play audio.</div>
+<div id="button1">Pause audio.</div>
+<audio id ="recording" src="./bio/biopage3.m4a" controls></audio>
 <a href="immunity.html"><div id="nextpage">Click here to go to the next page</div></a>
+<script type="text/javascript">
+
+var button = document.getElementById("button");
+var recording = document.getElementById("recording");
+var button1 = document.getElementById("button1");
+
+
+button.addEventListener("click", function(){
+	recording.play()
+})
+
+button1.addEventListener("click", function(){
+	recording.pause()
+})
+</script>
 
 </body>
 </html>
