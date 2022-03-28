@@ -1,300 +1,294 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<style type="text/css">	
+<title></title>
+<style type="text/css">
 body{
-	background-color: #cce7ff;
+background-color: #cce7ff;
 }
 #menubar{
-	z-index: 2;
-	width: 6vw;
-	height: 2.5vw;
-	background-color: lightskyblue;
-	position: absolute;
-	top: 1vw;
-	left: .85vw;
-	font-size: 2vw;
-	color: white;
-	text-align: center;
+z-index: 2;
+width: 6vw;
+height: 2.5vw;
+background-color: lightskyblue;
+position: absolute;
+top: 1vw;
+left: .85vw;
+font-size: 2vw;
+color: white;
+text-align: center;
 }
 #spikecell{
-	width: 20.4vw;
-	height: 20.4vw;
-	background-image: url(./bio/virus.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 14.7vw;
-	left: 40vw;
-	animation-name: dissapear;
-	animation-duration: 30s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+width: 20.4vw;
+height: 20.4vw;
+background-image: url(./bio/virus.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top: 14.7vw;
+left: 40vw;
+animation-name: dissapear;
+animation-duration: 15s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
 }
 @keyframes dissapear{
-	40% {opacity: 1;}
-	41% {opacity: 0;}
-	100% {opacity: 0;}
+0% {opacity: 0;top: 20vw; left: 60vw;}
+10% {opacity: 1; top: 14.7vw; left: 40vw;}
+80% {opacity: 1;}
+82% {opacity: 0;}
+100% {opacity: 0;}
 }
 #wbc{
-	width: 17vw;
-	height: 17vw;
-	background-image: url(./bio/wbc.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 8vw;
-	left: 20vw;
-	animation-name: wbc;
-	animation-duration: 30s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-}
-@keyframes wbc{
-	0% {opacity: 0; top: 5vw; left: 10vw;}
-	5% {opacity: 1;top: 8vw; left: 20vw;}
-	100% {opacity: 1;top: 8vw; left: 20vw;}
+width: 17vw;
+height: 17vw;
+background-image: url(./bio/wbc.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top: 8vw;
+left: 20vw;
+animation-name: wbc;
 }
 #alert{
-	width: 3vw;
-	height: 3vw;
-	background-image: url(./bio/alert.gif);
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 7vw;
-	left: 20vw;
-	animation-name: alert;
-	animation-duration: 30s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+width: 3vw;
+height: 3vw;
+background-image: url(./bio/alert.gif);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top: 7vw;
+left: 20vw;
+animation-name: alert;
+animation-duration: 15s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
 }
 @keyframes alert{
-	0% {opacity: 0}
-	5.9% {opacity: 0}
-	6% {opacity: 1}
-	7.9% {opacity: 1}
-	8% {opacity: 0}
-	100% {opacity: 0}
+0% {opacity: 0}
+10.9% {opacity: 0}
+12% {opacity: 1}
+14.9% {opacity: 1}
+16% {opacity: 0}
+100% {opacity: 0}
 }
 .antibody{
-	width: 4vw;
-	height: 4vw;
-	background-image: url(./bio/antibody.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 20vw;
-	animation-duration: 30s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+width: 4vw;
+height: 4vw;
+background-image: url(./bio/antibody.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top: 20vw;
+animation-duration: 15s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
 }
-#antibody1{	
-	left: 22vw;
-	animation-name: aone;
-	transform: rotate(40deg);
+#antibody1{
+left: 22vw;
+animation-name: aone;
+transform: rotate(40deg);
 }
 @keyframes aone{
-	0%{top: 15vw; opacity: 0;}
-	9% {top: 15vw; opacity: 0;}
-	10% {top: 20vw; opacity: 1;}
-	18% {top: 20vw; left: 22vw; opacity: 1;transform: rotate(40deg);}
-	30% {top:19vw; left:41vw; transform: rotate(-2deg);}
-	39% {top:19vw; left:41vw; transform: rotate(-2deg);opacity: 1;}
-	40% {opacity: 0;}
-	100% {opacity: 0;}
+0%{top: 15vw; opacity: 0;}
+18% {top: 15vw; opacity: 0;}
+20% {top: 20vw; opacity: 1;}
+36% {top: 20vw; left: 22vw; opacity: 1;transform: rotate(40deg);}
+60% {top:19vw; left:41vw; transform: rotate(-2deg);}
+78% {top:19vw; left:41vw; transform: rotate(-2deg);opacity: 1;}
+80% {opacity: 0;}
+100% {opacity: 0;}
 }
 #antibody2{
-	left: 26vw;
-	transform: rotate(15deg);
-	animation-name: atwo;
+left: 26vw;
+transform: rotate(15deg);
+animation-name: atwo;
 }
 @keyframes atwo{
-	0%{top: 15vw; opacity: 0;}
-	10% {top: 15vw; opacity: 0;}
-	11% {top: 20vw; opacity: 1;}
-	18% {top: 20vw; left: 26vw; opacity: 1;transform: rotate(40deg);}
-	30% {top: 24vw; left: 39vw; transform: rotate(-35deg);}
-	39% {top: 24vw; left: 39vw; transform: rotate(-35deg);opacity: 1;}
-	40% {opacity: 0;}
-	100% {opacity: 0;}
+0%{top: 15vw; opacity: 0;}
+20% {top: 15vw; opacity: 0;}
+22% {top: 20vw; opacity: 1;}
+36% {top: 20vw; left: 26vw; opacity: 1;transform: rotate(40deg);}
+60% {top: 24vw; left: 39vw; transform: rotate(-35deg);}
+78% {top: 24vw; left: 39vw; transform: rotate(-35deg);opacity: 1;}
+80% {opacity: 0;}
+100% {opacity: 0;}
 }
-#antibody3{	
-	left: 30vw;
-	transform: rotate(30deg);
-	animation-name: athree;
+#antibody3{
+left: 30vw;
+transform: rotate(30deg);
+animation-name: athree;
 }
 @keyframes athree{
-	0%{top: 15vw; opacity: 0;}
-	11% {top: 15vw; opacity: 0;}
-	12% {top: 20vw; opacity: 1;}
-	18% {top: 20vw; left: 30vw; opacity: 1;transform: rotate(40deg);}
-	30% {top: 28.5vw; left: 40.5vw; transform: rotate(-85deg);}
-	39% {top: 28.5vw; left: 40.5vw; transform: rotate(-85deg);opacity: 1;}
-	40% {opacity: 0;}
-	100% {opacity: 0;}
+0%{top: 15vw; opacity: 0;}
+22% {top: 15vw; opacity: 0;}
+24% {top: 20vw; opacity: 1;}
+36% {top: 20vw; left: 30vw; opacity: 1;transform: rotate(40deg);}
+60% {top: 28.5vw; left: 40.5vw; transform: rotate(-85deg);}
+78% {top: 28.5vw; left: 40.5vw; transform: rotate(-85deg);opacity: 1;}
+80% {opacity: 0;}
+100% {opacity: 0;}
 }
-#antibody4{	
-	left: 20vw;
-	animation-name: afour;
-	transform: rotate(30deg);
+#antibody4{
+left: 20vw;
+animation-name: afour;
+transform: rotate(30deg);
 }
 @keyframes afour{
-	0%{top: 15vw; opacity: 0;}
-	12% {top: 15vw; opacity: 0;}
-	13% {top: 20vw; opacity: 1;}
-	18% {top: 20vw; left: 20vw; opacity: 1;transform: rotate(40deg);}
-	30% {top: 31vw; left: 45.5vw; transform: rotate(-130deg);}
-	39% {top: 31vw; left: 45.5vw; transform: rotate(-130deg);opacity: 1;}
-	40% {opacity: 0;}
-	100% {opacity: 0;}
+0%{top: 15vw; opacity: 0;}
+24% {top: 15vw; opacity: 0;}
+26% {top: 20vw; opacity: 1;}
+36% {top: 20vw; left: 20vw; opacity: 1;transform: rotate(40deg);}
+60% {top: 31vw; left: 45.5vw; transform: rotate(-130deg);}
+78% {top: 31vw; left: 45.5vw; transform: rotate(-130deg);opacity: 1;}
+80% {opacity: 0;}
+100% {opacity: 0;}
 }
 #antibody5{
-	left: 24vw;
-	transform: rotate(37deg);
-	animation-name: afive;
+left: 24vw;
+transform: rotate(37deg);
+animation-name: afive;
 }
 @keyframes afive{
-	0%{top: 15vw; opacity: 0;}
-	13% {top: 15vw; opacity: 0;}
-	14% {top: 20vw; opacity: 1;}
-	18% {top: 20vw; left: 24vw; opacity: 1;transform: rotate(40deg);}
-	30% {top: 29vw; left: 51vw; transform: rotate(-185deg);}
-	39% {top: 29vw; left: 51vw; transform: rotate(-185deg);opacity: 1;}
-	40% {opacity: 0;}
-	100% {opacity: 0;}
+0%{top: 15vw; opacity: 0;}
+26% {top: 15vw; opacity: 0;}
+28% {top: 20vw; opacity: 1;}
+36% {top: 20vw; left: 24vw; opacity: 1;transform: rotate(40deg);}
+60% {top: 29vw; left: 51vw; transform: rotate(-185deg);}
+78% {top: 29vw; left: 51vw; transform: rotate(-185deg);opacity: 1;}
+80% {opacity: 0;}
+100% {opacity: 0;}
 }
-#antibody6{	
-	left: 32vw;
-	transform: rotate(50deg);
-	animation-name: asix;
+#antibody6{
+left: 32vw;
+transform: rotate(50deg);
+animation-name: asix;
 }
 @keyframes asix{
-	0%{top: 15vw; opacity: 0;}
-	14% {top: 15vw; opacity: 0;}
-	15% {top: 20vw; opacity: 1;}
-	18% {top: 20vw; left: 32vw; opacity: 1;transform: rotate(40deg);}
-	30% {top: 24vw; left: 53vw; transform: rotate(130deg);}
-	39% {top: 24vw; left: 53vw; transform: rotate(130deg);opacity: 1;}
-	40% {opacity: 0;}
-	100% {opacity: 0;}
+0%{top: 15vw; opacity: 0;}
+28% {top: 15vw; opacity: 0;}
+30% {top: 20vw; opacity: 1;}
+36% {top: 20vw; left: 32vw; opacity: 1;transform: rotate(40deg);}
+60% {top: 24vw; left: 53vw; transform: rotate(130deg);}
+78% {top: 24vw; left: 53vw; transform: rotate(130deg);opacity: 1;}
+80% {opacity: 0;}
+100% {opacity: 0;}
 }
-#antibody7{	
-	left: 28vw;
-	transform: rotate(20deg);
-	animation-name: aseven;
+#antibody7{
+left: 28vw;
+transform: rotate(20deg);
+animation-name: aseven;
 }
 @keyframes aseven{
-	0%{top: 15vw; opacity: 0;}
-	15% {top: 15vw; opacity: 0;}
-	16% {top: 20vw; opacity: 1;}
-	18% {top: 20vw; left: 28vw; opacity: 1;transform: rotate(40deg);}
-	30% {top: 19vw; left: 51vw; transform: rotate(90deg);}
-	39% {top: 19vw; left: 51vw; transform: rotate(90deg);opacity: 1;}
-	40% {opacity: 0;}
-	100% {opacity: 0;}
+0%{top: 15vw; opacity: 0;}
+30% {top: 15vw; opacity: 0;}
+32% {top: 20vw; opacity: 1;}
+36% {top: 20vw; left: 28vw; opacity: 1;transform: rotate(40deg);}
+60% {top: 19vw; left: 51vw; transform: rotate(90deg);}
+78% {top: 19vw; left: 51vw; transform: rotate(90deg);opacity: 1;}
+80% {opacity: 0;}
+100% {opacity: 0;}
 }
-#antibody8{	
-	left: 34vw;
-	transform: rotate(40deg);
-	animation-name: aeight;
+#antibody8{
+left: 34vw;
+transform: rotate(40deg);
+animation-name: aeight;
 }
 @keyframes aeight{
-	0%{top: 15vw; opacity: 0;}
-	16% {top: 15vw; opacity: 0;}
-	17% {top: 20vw; opacity: 1;}
-	18% {top: 20vw; left: 34vw; opacity: 1;transform: rotate(40deg);}
-	30% {top: 17vw; left: 45.8vw; transform: rotate(48deg);}
-	39% {top: 17vw; left: 45.8vw; transform: rotate(48deg);opacity: 1;}
-	40% {opacity: 0;}
-	100% {opacity: 0;}
+0%{top: 15vw; opacity: 0;}
+32% {top: 15vw; opacity: 0;}
+34% {top: 20vw; opacity: 1;}
+36% {top: 20vw; left: 34vw; opacity: 1;transform: rotate(40deg);}
+60% {top: 17vw; left: 45.8vw; transform: rotate(48deg);}
+78% {top: 17vw; left: 45.8vw; transform: rotate(48deg);opacity: 1;}
+80% {opacity: 0;}
+100% {opacity: 0;}
 }
 .wbc{
-	width: 18vw;
-	height: 18vw;
-	background-image: url(./bio/wbc.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	animation-duration: 30s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	opacity: 0;
+width: 18vw;
+height: 18vw;
+background-image: url(./bio/wbc.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+animation-duration: 15s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+opacity: 0;
 }
 #wbc1{
-	animation-name: wbca;
+animation-name: wbca;
 }
 @keyframes wbca{
-	0% {opacity: 0; top: 5vw; left: 30vw;}
-	30% {opacity: 0; top: 5vw; left: 30vw;}
-	40% {opacity: 1;top: 16vw; left: 38vw;}
-	45%{opacity: 1}
-	55% {opacity: 0; top: 5vw; left: 30vw;}
-	100% {opacity: 0; top: 5vw; left: 30vw;}
+0% {opacity: 0; top: 5vw; left: 30vw;}
+60% {opacity: 0; top: 5vw; left: 30vw;}
+80% {opacity: 1;top: 16vw; left: 38vw;}
+90%{opacity: 1}
+95% {opacity: 0; top: 5vw; left: 30vw;}
+100% {opacity: 0; top: 5vw; left: 30vw;}
 }
 #wbc2{
 animation-name: wbcb;
 }
 @keyframes wbcb{
-	0% {opacity: 0; top: 5vw; left: 30vw;}
-	30% {opacity: 0; top: 15vw; left: 5vw;}
-	40% {opacity: 1;top: 24vw; left: 39vw;}
-	45%{opacity: 1}
-	55% {opacity: 0; top: 15vw; left: 5vw;}
-	100% {opacity: 0; top: 15vw; left: 5vw;}
+0% {opacity: 0; top: 5vw; left: 30vw;}
+60% {opacity: 0; top: 15vw; left: 5vw;}
+80% {opacity: 1;top: 24vw; left: 39vw;}
+90%{opacity: 1}
+95% {opacity: 0; top: 15vw; left: 5vw;}
+100% {opacity: 0; top: 15vw; left: 5vw;}
 }
 
 #wbc3{
 animation-name: wbcc;
 }
 @keyframes wbcc{
-	0% {opacity: 0; top: 10vw; left: 70vw;}
-	30% {opacity: 0; top: 10vw; left: 70vw;}
-	40% {opacity: 1;top: 19vw; left: 39vw;}
-	45%{opacity: 1}
-	55% {opacity: 0; top: 10vw; left: 70vw;}
-	100% {opacity: 0; top: 10vw; left: 70vw;}
+0% {opacity: 0; top: 10vw; left: 70vw;}
+60% {opacity: 0; top: 10vw; left: 70vw;}
+80% {opacity: 1;top: 19vw; left: 39vw;}
+90%{opacity: 1}
+95% {opacity: 0; top: 10vw; left: 70vw;}
+100% {opacity: 0; top: 10vw; left: 70vw;}
 }
 #button{
-	width: 4vw;
-	height: 2.5vw;
-	background-color: #33d6ff;
-	font-size: 1vw;
-	text-align: center;
-	color: black;
-	position: absolute;
-	left: 46vw;
-	top: 6vw;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+width: 4vw;
+height: 2.5vw;
+background-color: #33d6ff;
+font-size: 1vw;
+text-align: center;
+color: black;
+position: absolute;
+left: 46vw;
+top: 6vw;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #button1{
-	width: 4vw;
-	height: 2.5vw;
-	background-color: #33d6ff;
-	font-size: 1vw;
-	text-align: center;
-	color: black;
-	position: absolute;
-	left: 50vw;
-	top: 6vw;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+width: 4vw;
+height: 2.5vw;
+background-color: #33d6ff;
+font-size: 1vw;
+text-align: center;
+color: black;
+position: absolute;
+left: 50vw;
+top: 6vw;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #recording{
-	width: 8vw;
-	height: 2.5vw;
-	background-color: lightblue;
-	font-size: 1vw;
-	text-align: center;
-	color: black;
-	position: absolute;
-	left: 46vw;
-	top: 6vw;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	z-index: -1;
+width: 8vw;
+height: 2.5vw;
+background-color: lightblue;
+font-size: 1vw;
+text-align: center;
+color: black;
+position: absolute;
+left: 46vw;
+top: 6vw;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+z-index: -1;
 }
 
-	</style>
+</style>
 </head>
 <body>
 <a href="protein.html"><div id="menubar">Back</div></a>
@@ -314,7 +308,7 @@ animation-name: wbcc;
 <div class="wbc" id="wbc3"></div>
 <div id="button">Play audio.</div>
 <div id="button1">Pause audio.</div>
-<audio id ="recording" src="./bio/biopage4.m4a" controls></audio>
+<audio id ="recording" src="./bio/biopage4.mp3" controls></audio>
 <script type="text/javascript">
 
 var button = document.getElementById("button");
@@ -323,11 +317,11 @@ var button1 = document.getElementById("button1");
 
 
 button.addEventListener("click", function(){
-	recording.play()
+recording.play()
 })
 
 button1.addEventListener("click", function(){
-	recording.pause()
+recording.pause()
 })
 </script>
 
