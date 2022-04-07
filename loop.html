@@ -4,7 +4,6 @@
 	<title></title>
 
 	<style type="text/css">
-
 		.potato{
 			width: 100px;
 			height: 100px;
@@ -14,27 +13,19 @@
 			display: inline-block;
 			background-repeat: no-repeat;
 		}
-
 	</style>
-
 </head>
 <body>
-
 <h1>Roast the Potato!</h1>
 
 <script type="text/javascript">
 	
 	function makePotato(){
 		var p = document.createElement("div")
-
 		document.body.appendChild(p);
-
 		p.classList.add("potato");
-
 		p.addEventListener("click", function(){
-
 			p.classList.remove("potato")
-
 		})
 	}
 
