@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+	
+body{
+background-color: #cce7ff;
+}
+#menubar{
+	z-index: 2;
+	width: 7vw;
+	height: 2.5vw;
+	background-color: lightskyblue;
+	position: absolute;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+#lyrics {
+	width: 20vw;
+	height: 25vw;
+	background-color: lightblue;
+	position: absolute;
+	top: 10vw;
+	left: 40vw;
+	color: black;
+	text-align: center;
+	font-size: 2vw;
+}
+#sound{
+	width: 20vw;
+	height: 3vw;
+	position: absolute;
+	top: 6vw;
+	left: 40vw;
+}
+#button{
+	width: 20vw;
+	height: 4vw;
+	position: absolute;
+	top: 5.5vw;
+	left: 40vw;
+	z-index: 1;
+}
+#credits{
+	width: 20vw;
+	height: 2vw;
+	position: absolute;
+	top: 47vw;
+	left: 1vw;
+	font-size: 1.25vw;
+	color: black;
+}
+
+</style>
+</head>
+<body>
+
+<a href="projects.html">
+<div id="menubar"> Projects</div>
+</a>
+<div id="button"></div>
+<div id="lyrics">Last Christmas by Wham!</div>
+<div id="credits">Made by Easha and Ellie</div>
+<audio id ="sound" src="karaoke.mp3" controls></audio>
+<script type="text/javascript">
+	
+var lyrics = document.getElementById("lyrics");
+var sound = document.getElementById("sound");
+
+var phrases = ["[intro]", "[intro]", "[intro]","[intro]", "Last Christmas, I gave you my heart, But the very next day, you gave it away, This year, to save me from tears, I'll give it to someone special", "Last Christmas, I gave you my heart, But the very next day, you gave it away, This year, to save me from tears, I'll give it to someone special","Last Christmas, I gave you my heart, But the very next day, you gave it away, This year, to save me from tears, I'll give it to someone special ","Last Christmas, I gave you my heart, But the very next day, you gave it away, This year, to save me from tears, I'll give it to someone special","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Once bitten and twice shy, I keep my distance, but you still catch my eye. Tell me, baby, do you recognize me? Well, it's been a year, it doesn't surprise me","Once bitten and twice shy, I keep my distance, but you still catch my eye. Tell me, baby, do you recognize me? Well, it's been a year, it doesn't surprise me","Once bitten and twice shy, I keep my distance, but you still catch my eye. Tell me, baby, do you recognize me? Well, it's been a year, it doesn't surprise me","Once bitten and twice shy, I keep my distance, but you still catch my eye. Tell me, baby, do you recognize me? Well, it's been a year, it doesn't surprise me", "Merry Christmas,  I wrapped it up and sent it, With a note saying, I love you,  I meant it. Now I know what a fool I've been, But if you kissed me now, I know you'd fool me again","Merry Christmas,  I wrapped it up and sent it, With a note saying, I love you,  I meant it. Now I know what a fool I've been, But if you kissed me now, I know you'd fool me again","Merry Christmas,  I wrapped it up and sent it, With a note saying, I love you,  I meant it. Now I know what a fool I've been, But if you kissed me now, I know you'd fool me again","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away. This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away. This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away. This year, to save me from tears, I'll give it to someone special (special).","Last Christmas, I gave you my heart, But the very next day, you gave it away. This year, to save me from tears, I'll give it to someone special (special).","Last Christmas, I gave you my heart, But the very next day, you gave it away. This year, to save me from tears, I'll give it to someone special (special).","Last Christmas, I gave you my heart, But the very next day, you gave it away. This year, to save me from tears, I'll give it to someone special (special).","Last Christmas, I gave you my heart, But the very next day, you gave it away. This year, to save me from tears, I'll give it to someone special (special).","A crowded room, friends with tired eyes, I'm hiding from you, and your soul of ice. My God, I thought you were someone to rely on, Me? I guess I was a shoulder to cry on","A crowded room, friends with tired eyes, I'm hiding from you, and your soul of ice. My God, I thought you were someone to rely on, Me? I guess I was a shoulder to cry on","A crowded room, friends with tired eyes, I'm hiding from you, and your soul of ice. My God, I thought you were someone to rely on, Me? I guess I was a shoulder to cry on","A face on a lover with a fire in his heart, A man undercover, but you tore me apart. Ooh-hoo, Now I've found a real love, you'll never fool me again", "A face on a lover with a fire in his heart, A man undercover, but you tore me apart. Ooh-hoo, Now I've found a real love, you'll never fool me again","A face on a lover with a fire in his heart, A man undercover, but you tore me apart. Ooh-hoo, Now I've found a real love, you'll never fool me again","A face on a lover with a fire in his heart, A man undercover, but you tore me apart. Ooh-hoo, Now I've found a real love, you'll never fool me again","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart, But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)", "Last Christmas, I gave you my heart (I gave you my heart), But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart (I gave you my heart), But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart (I gave you my heart), But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart (I gave you my heart), But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart (I gave you my heart), But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart (I gave you my heart), But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","Last Christmas, I gave you my heart (I gave you my heart), But the very next day, you gave it away (you gave it away). This year, to save me from tears, I'll give it to someone special (special)","A face on a lover with a fire in his heart (I gave you my heart), A man undercover, but you tore him apart. Maybe next year, I'll give it to someone, I'll give it to someone special (special!)! So long!","A face on a lover with a fire in his heart (I gave you my heart), A man undercover, but you tore him apart. Maybe next year, I'll give it to someone, I'll give it to someone special (special!)! So long!","A face on a lover with a fire in his heart (I gave you my heart), A man undercover, but you tore him apart. Maybe next year, I'll give it to someone, I'll give it to someone special (special!)! So long!","[fade out]","Last Christmas by Wham!","Last Christmas by Wham!","Last Christmas by Wham!","Last Christmas by Wham!","Last Christmas by Wham!","Last Christmas by Wham!","Last Christmas by Wham!","Last Christmas by Wham!","Last Christmas by Wham!","Last Christmas by Wham!",];
+var counter = 0;
+
+function Lyrics (){
+
+	counter = counter +1
+
+	console.log(counter)
+
+lyrics.innerText = phrases[counter]
+}
+
+var button = document.getElementById("button")
+
+button.addEventListener("click", function(){
+	 	sound.play()
+
+setInterval(Lyrics, 5000)
+
+	 	button.style.width = ".01vw";
+	 	button.style.height = ".01vw";
+	 })
+
+</script>
+
+</body>
+</html>
