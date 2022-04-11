@@ -25,7 +25,7 @@ background-color: #cce7ff;
 	height: 25vw;
 	background-color: lightblue;
 	position: absolute;
-	top: 10vw;
+	top: 14vw;
 	left: 40vw;
 	color: black;
 	text-align: center;
@@ -35,14 +35,14 @@ background-color: #cce7ff;
 	width: 20vw;
 	height: 3vw;
 	position: absolute;
-	top: 6vw;
+	top: 9vw;
 	left: 40vw;
 }
 #button{
 	width: 20vw;
 	height: 4vw;
 	position: absolute;
-	top: 5.5vw;
+	top: 8.5vw;
 	left: 40vw;
 	z-index: 1;
 }
@@ -55,6 +55,24 @@ background-color: #cce7ff;
 	font-size: 1.25vw;
 	color: black;
 }
+#click{
+	width: 30vw;
+	height: 2vw;
+	position: absolute;
+	top: 7vw;
+	left: 35vw;
+	font-size: 1vw;
+	color: black;
+	text-align: center;
+}
+#block{
+	width: 20vw;
+	height: 4vw;
+	position: absolute;
+	top: 8.5vw;
+	left: 40vw;
+	z-index: -1;
+}
 
 </style>
 </head>
@@ -64,7 +82,9 @@ background-color: #cce7ff;
 <div id="menubar"> Projects</div>
 </a>
 <div id="button"></div>
+<div id="block"></div>
 <div id="lyrics">Last Christmas by Wham!</div>
+<div id="click">Click below to play Karaoke, reload the page to restart. </div>
 <div id="credits">Made by Easha and Ellie</div>
 <audio id ="sound" src="karaoke.mp3" controls></audio>
 <script type="text/javascript">
@@ -84,7 +104,8 @@ function Lyrics (){
 lyrics.innerText = phrases[counter]
 }
 
-var button = document.getElementById("button")
+var button = document.getElementById("button");
+var block = document.getElementById("block");
 
 button.addEventListener("click", function(){
 	 	sound.play()
@@ -93,6 +114,8 @@ setInterval(Lyrics, 5000)
 
 	 	button.style.width = ".01vw";
 	 	button.style.height = ".01vw";
+block.style.zIndex = "4"
+
 	 })
 
 </script>
