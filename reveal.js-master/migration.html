@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Migration Map</title>
+<style type="text/css">
+#menubar{
+	z-index: 2;
+	width: 6vw;
+	height: 2.5vw;
+	background-color: lightskyblue;
+	position: absolute;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+body{
+	background-color: #cce7ff;
+}
+#map{
+	width: 75vw;
+	height: 47.75vw;
+	position: absolute;
+	left: 24.25vw;
+	background-image: url(./migration/flyways.jpeg);
+	background-size: cover;
+	z-index: -1;
+}
+
+#knot{
+	z-index: 2;
+	width: 5vw;
+	height:5vw;
+	background-size:contain;
+	position: absolute;
+	animation-name: knot;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes knot {
+	0% {top: 39vw; left: 42vw;background-image: url(./migration/warbler10.png);}
+	14% {top: 27vw; left: 51vw;background-image: url(./migration/warbler10.png);}
+	14.01% {top: 27vw; left: 51vw;background-image: url(./migration/warbler11.png);}
+	28% {top: 16vw; left: 44vw;background-image: url(./migration/warbler11.png);}
+	42% {top: 7vw; left: 44vw;background-image: url(./migration/warbler11.png);}
+	42.01% {top: 7vw; left: 44vw;background-image: url(./migration/warbler12.png);}
+	57% {top: 3vw; left: 32vw;background-image: url(./migration/warbler12.png);}
+	57.01% {top: 3vw; left: 32vw;background-image: url(./migration/warbler13.png);}
+	71% {top: 7vw; left: 32vw;background-image: url(./migration/warbler13.png);}
+	85% {top: 25vw; left: 44vw;background-image: url(./migration/warbler13.png);}
+	100% {top: 39vw; left: 42vw;background-image: url(./migration/warbler13.png);}
+}
+
+.text{
+	width: 23vw;
+	position: absolute;
+	top: 3vw;
+	left: .5vw;
+	opacity: 0;
+	z-index: 0;
+}
+
+#directions{
+	width: 23vw;
+	position: absolute;
+	top: 3vw;
+	left: .5vw;
+	opacity: 1;
+}
+
+#click{
+	z-index: 1;
+	width: 98.75vw;
+	height:47.75vw;
+}
+
+</style>
+
+</head>
+<body>
+
+<a href="birds.html">
+<div id="menubar"> Back</div>
+</a>
+<div id="map"></div>
+<div id="click"> </div>
+<div id="directions"> 
+<h2>Overview and Instructions</h2>
+<p>Click on a bird to learn more about the flyway it's on, as well as information about that species. Click anywhere except a bird to see these instructions. </p>
+<p>This map highlights the eight major bird migration flyways of the world. A flyway is a route regularly used by large numbers of migrating birds (Oxford Languages). Each bird moving around the map represents one species that travels on that flyway.
+</p> 
+<p>Pacific Americas Flyway = Arctic Tern (Green)</p>
+<p>Mississippi Americas Flyway = Swainson's Hawk (Pink)</p>
+<p>Atlantic Americas Flyway = Red Knot (Black)</p>
+<p>East Atlantic Flyway = Greenland/Scandinavian Wheatear (Green)</p>
+<p>Black Sea/Mediterranean Flyway = Spectacled Warbler (Dark Blue)</p>
+<p>East Africa-West Asia Flyway = Siberian Crane (Pink)</p>
+<p>Central Asian Flyway = Bar-Headed Goose (Black)</p>
+<p>East Asia-Australian Flyway = Fork-Tailed Swift (Light Blue)</p>
+</div>
+
+<div id="knot"></div>
+<div class="text" id="knottext">
+<h2>The Atlantic American Flyway</h2>
+<p>The Atlantic Americas Flyway connects the Canadian Arctic Archipelago to South America’s southern tip, Tierra del Fuego. Numerous arctic breeding birds move south along the flyway for the northern winter, in addition to hundreds of other species, who travel north to breed. </p>
+<p>The Atlantic American Flyway hosts over 250 bird species and serves as an important resting and feeding site for migrating and wintering waterfowl, including more than 35,000 Canada geese and 15,000 ducks using the Atlantic Flyway during the fall migration. Warblers, which travel along this flyway, come from South America, through the US to Canada, where they breed. Most birds make this 1,500-2,000 mile journey in about two or three days, never stopping to rest or eat. </p>
+<p>Sources: http://datazone.birdlife.org/userfiles/file/sowb/ flyways/3_Atlantic_Americas_Factsheet.pdf and https://www.allaboutbirds.org/news/a-new-flyway-fall-migrants-cross-the-atlantic-to-reach-south-america/</p>
+</div>
+
+
+<script type="text/javascript">
+
+	var knot = document.getElementById('knot');
+
+	function knotInfo (){
+		knottext.style.opacity = "1";
+		directions.style.opacity = "0";
+		console.log("ah?");
+	}
+	knot.addEventListener("click", knotInfo)
+	
+
+	function clickInfo (){
+		knottext.style.opacity = "0";
+		directions.style.opacity = "1";
+		console.log("yh?");
+	}
+	click.addEventListener("click", clickInfo)
+
+</script>
+
+</body>
+</html>

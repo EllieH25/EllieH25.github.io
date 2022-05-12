@@ -1,0 +1,67 @@
+<!-- 
+1. make a div
+2. variable that points to a number (math.random, rounded that multiplies by something -- 0-51 or etc however labeled)
+3. function that on click, generates a random number plus phrase png be background image
+4. or have an array/list, and each element has a number corresponding to it. have (for ex.) chickadee.png, and is this element in the array, will put chickadee.png
+
+make div, console logs a random number that is an integer between 0-50 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bird Generator</title>
+	<style type="text/css">
+body{
+	background-color: #cce7ff;
+}
+#photo{
+	z-index: -1;
+	width: 98.75vw;
+	height: 97vh;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+		}
+
+#info{
+	z-index: 3;
+	width: 7vw;
+	height: 1vw;
+	background-color: #cce7ff;
+	color: black;
+	font-size: 1.25vw;
+	position: absolute;
+	top: 2vw;
+	left: .85vw;
+
+}
+
+	</style>
+
+</head>
+<body>
+<div id="photo"></div>
+
+<div id="info">Click to see a warbler!</div>
+
+<script type="text/javascript">
+
+let photo = document.getElementById('photo');
+
+let number = 0
+
+function bird() {
+number = number + 1
+console.log(number + ".jpg")
+
+
+photo.style.backgroundImage = "url(./warblers/" + number + ".jpg)"
+
+if (number > 11) {number = 0};
+}
+
+document.addEventListener("click", bird)
+
+</script>
+</body>
+</html>
