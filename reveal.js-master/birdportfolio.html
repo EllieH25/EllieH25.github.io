@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bird Photo Portfolio</title>
+
+	<style type="text/css">
+	
+#menubar{
+	z-index: 2;
+	width: 7vw;
+	height: 2.5vw;
+	background-color: lightskyblue;
+	position: absolute;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+#journal{
+	width: 40vw;
+	height: 4vw;
+	font-size: 3.75vw;
+	color: black;
+	text-align: center;
+	text-decoration: underline;
+}
+.squares{
+	width:13vw;
+	height:8.5vw;
+	margin:1.58vw;
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	border-style: solid;
+	border-width: .1vw;
+	border-color: black;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+body{
+	background-color: #cce7ff;	
+}
+#box{
+	width: 36vw;
+	height: 24vw;
+	border-style: solid;
+	border-width: .1vw;
+	border-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 3vw;
+	margin-top: 3vw;
+}
+.text{
+	position: relative;
+	top: 47.5%;
+	color: black;
+	text-align: center;
+	font-size: 1.1vw;
+	z-index: -1;
+}
+	</style>
+</head>
+<body>
+<a href="index.html#/4">
+<div id="menubar"> Back</div>
+</a>
+<center>
+<div id="journal"> Bird Photos Portfolio</div>
+<div id="box">
+	<div class="text"> (Click an image to see it larger!)</div>
+</div>
+</center>
+<script type="text/javascript">
+
+	var counter = -1;
+
+	var box = document.getElementById('box');
+
+	function makeSquare (input){
+		var square = document.createElement("div");
+		document.body.appendChild(square);
+		square.style.backgroundImage = "url(./warblers/"+input+".jpg)"
+		square.classList.add("squares");
+
+		square.addEventListener("click", function () {
+
+			box.style.backgroundImage = square.style.backgroundImage;
+		})
+	}
+
+	for(var i=1; i<13; i=i+1){
+		makeSquare(i);
+	}
+
+</script>
+</body>
+</html>
