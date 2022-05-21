@@ -37,10 +37,20 @@ body{
 	font-size: 1.5vw;
 	color: black;
 }
+/*
+After making div, copy this
+#entry_{
+	position: absolute;
+	width: 99vw;
+	top: 30vw;
+	font-size: 1.5vw;
+	color: black;
+and position it so the next entry is a little below the previous one (no overlap, make sure they have some space)
+}*/
 #date{
 	position: absolute;
 	width: 99vw;
-	top: 7vw;
+	top: 6vw;
 	font-size: 2vw;
 	color: black;	
 }
@@ -52,7 +62,12 @@ body{
 <a href="journal.html">
 <div id="menubar"> Back</div>
 </a>
-<div id="date">5/19/22</div>
-<div id="entry">I presented my final project in class today. I think the presentation went well, but I’m sad that it’s over. I guess this is my last journal entry, and I’ve completed my goal of having exactly 28 entries. (I kind of forgot this month so there are four from this week alone, but that’s fine). Everything worked out! I got to make so many cool projects and it was really fun. Thanks again for everything Molly! </div>
+<div id="date">Later Updates</div>
+<div id="entry">5/21/22 <p></p>
+My friend is doing a project on robins for bio, and since she knows I like birds, we were discussing her project together. We were looking at one article for research and read that robins sing at each other to show their dominance. She thought that robins singing at each other sort of like people yelling at each other was pretty funny, especially because she said she immediately thought of robins singing opera at each other (we had discussed opera earlier) rather than singing bird songs. It was a funny idea and inspired me to make this project: <a href="https://ellieh25.github.io/robin.html">https://ellieh25.github.io/robin.html</a></p></div>
+<!-- for future entries, copy this div:
+ <div id="entry_"></div>
+fill in the number so it is one higher than the last entry, and then do css positioning (see commented out section above).
+Put the text in a <p> tag separate from the date (see the first entry for reference)-->
 </body>
 </html>

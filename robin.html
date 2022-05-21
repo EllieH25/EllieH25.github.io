@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+<style type="text/css">
+body{
+	background-color: #cce7ff;
+}
+#menubar{
+	z-index: 2;
+	width: 6vw;
+	height: 2.5vw;
+	background-color: lightskyblue;
+	position: absolute;
+	top: 1vw;
+	left: .85vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+#robin1{
+	width: 20vw;
+	height: 15vw;
+	background-image: url(robin1.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 10vw;
+	left: 10vw;
+}
+#robin1:hover{
+	background-image: url(robin.gif);
+}
+#robin2{
+	width: 20vw;
+	height: 15vw;
+	background-image: url(robin2.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 10vw;
+	left: 70vw;
+}
+#robin2:hover{
+	background-image: url(robin.gif);
+	transform: scaleX(-1);
+}
+#title{
+	width: 20vw;
+	height: 3vw;
+	position: absolute;
+	top: 2vw;
+	left: 40vw;
+	font-size: 2vw;
+	text-decoration: underline;
+	text-align: center;
+}
+#recording{
+width: 8vw;
+height: 2.5vw;
+position: absolute;
+left: 46vw;
+top: 6vw;
+z-index: -1;
+}
+#box{
+width: 24vw;
+height: 6vw;
+background-color: lightblue;
+font-size: 1vw;
+text-align: center;
+color: black;
+position: absolute;
+left: 38vw;
+top: 6vw;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+z-index: -1;
+}
+</style>
+
+</head>
+<body>
+
+<a href="entry28.html">
+<div id="menubar"> Back</div>
+</a>
+
+<div id="robin1"></div>
+<div id="robin2"></div>
+<div id="title">Róbîn: Le Opera</div>
+<audio id="recording" src="robin.m4a" controls></audio>
+<div id="box">Click Me to Start<p>Then hover over a robin to hear it sing <p>(the sound won't play if you don't click the screen first)</p></p></div>
+
+<script type="text/javascript">
+
+var button = document.getElementById("robin1");
+var recording = document.getElementById("recording");
+var button1 = document.getElementById("robin2");
+
+button.addEventListener("mouseover", function(){
+recording.play()
+})
+
+button.addEventListener("mouseout", function(){
+recording.pause()
+})
+
+button1.addEventListener("mouseover", function(){
+recording.play()
+})
+
+button1.addEventListener("mouseout", function(){
+recording.pause()
+})
+
+</script>
+
+</body>
+</html><doctype
